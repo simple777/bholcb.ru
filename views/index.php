@@ -67,7 +67,7 @@
 
 <!-- Scripts -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="<?php echo SITEURL;?>js/slider.js"></script>
+<script src="<?php echo SITEURL;?>js/slider.js?v10"></script>
 <script src="<?php echo SITEURL;?>js/main.js"></script>
 <script src="<?php echo SITEURL;?>js/goodvision.js"></script>
 

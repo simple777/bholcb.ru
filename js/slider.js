@@ -150,20 +150,23 @@ $(document).ready(function(){
                     activeSlide = 0;
 
 
-
-                    /* Init when [good vision mode] is off */
-                    if ( localStorage.getItem('good-vision') == '0' )
-
-                    {
-                        waitForNext();
-                    }
-
-                        else
+                    if ( (localStorage.getItem('good-vision') != null) && (localStorage.getItem('good-vision') == '0') )
 
                         {
-                            //hide slider controls
-                            $(".slides-fader-controls").hide();
+                            waitForNext();
                         }
+
+                        else  if ( (localStorage.getItem('good-vision') != null) && (localStorage.getItem('good-vision') == '1') )
+
+                                    {
+                                        //hide slider controls
+                                        $(".slides-fader-controls").hide();
+                                    }
+
+                                    else if ( localStorage.getItem('good-vision') === null )
+                                    {
+                                        waitForNext();
+                                    }
 
 
 
