@@ -1,0 +1,168 @@
+/* Readers - Services */
+/**********************************************************************************************************************/
+
+.readers-services-wrapper
+{
+	width: 50%;
+	margin: 1.5em auto;
+}
+
+.readers-services-wrapper::before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: .7;
+	z-index: -1;
+
+	background: url(../images/pages/readers-services-bg.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.readers-services
+{
+	background: white;
+	opacity: .95;
+	padding: 7% 10%;
+}
+
+.readers-services h2
+{
+	text-transform: uppercase;
+	margin: 1em auto;
+	text-align: center;
+	padding-bottom: 1em;
+}
+
+.readers-services-list ol li
+{
+	font-size: 1.3em;
+	padding: .4em;
+}
+
+/* Readers Rules */
+/**********************************************************************************************************************/
+
+.readers-rules-wrapper
+{
+	width: 50%;
+	margin: 1.5em auto;
+}
+
+.readers-rules-wrapper::before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: .7;
+	z-index: -1;
+
+	background: url(../images/pages/readers-services-bg.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.readers-rules
+{
+	background: white;
+	opacity: .95;
+	padding: 7% 10%;
+}
+
+.readers-rules h2
+{
+	text-transform: uppercase;
+	margin: 1em auto;
+	text-align: center;
+	padding-bottom: 1em;
+}
+
+.readers-rules h4
+{
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+
+.readers-rules > ol > li
+{
+	font-size: 1.3em;
+	padding: .4em;
+}
+
+
+
+/* Readers Clubs */
+/**********************************************************************************************************************/
+
+.readers-clubs-wrapper
+{
+	width: 100%;
+	margin: 0 auto;
+	padding: 5px 0;
+}
+
+.readers-clubs .content-line-wrapper-2
+{
+	height: 480px;
+}
+
+.readers-clubs h2
+{
+	text-transform: uppercase;
+	margin: 1em auto;
+	text-align: center;
+	transition: .3s;
+}
+
+.readers-clubs .content-line-block-text
+{
+	opacity: 0;
+	transition: .7s;
+	font-size: 1.4em;
+	text-align: center;
+	padding: 10% 5%;
+	position: absolute;
+	line-height: 1.45em;
+	left: 0;
+	top: 0;
+	width: 89.5%;
+	height: 99.5%;
+	z-index: 2;
+}
+
+.readers-clubs .content-line-block-header
+{
+	display: inline-block;
+}
+
+.readers-clubs .content-line-block-content-in
+{
+	z-index: 3;
+}
+
+.readers-clubs .content-line-block-header:hover
+{
+	opacity: 0;
+	cursor: pointer;
+}
+
+
+
+/*Preloading images*/
+/**********************************************************************************************************************/
+
+.img_preload
+{
+
+}

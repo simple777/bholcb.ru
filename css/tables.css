@@ -1,0 +1,93 @@
+/* Table - Two cols */
+/**********************************************************************************************************************/
+
+.table-two-cols
+{
+	font-size: 1.3em;
+	text-align: left;
+	border-collapse: collapse;
+	outline: 1px dashed silver;
+	width: 100%;
+}
+
+.table-two-cols th
+{
+	color: #2f73e3;
+	border-bottom: 1px dashed silver;
+	padding: 12px 17px;
+}
+
+.table-two-cols td
+{
+	color: #333;
+	border-bottom: 1px dashed silver;
+	border-right:1px dashed silver;
+	padding: 23px 27px;
+}
+
+.table-two-cols tr:last-child td
+{
+	border-bottom: none;
+}
+
+.table-two-cols td:last-child
+{
+	border-right: none;
+	width: 25%;
+}
+
+.table-two-cols tr:hover td
+{
+	background: rgba (25,98,64, .5);
+}
+
+
+
+/* Table content */
+
+.table-content-title
+{
+	color: #2f73e3;
+	line-height: 1.8em;
+	margin-bottom: 3%;
+}
+
+.table-content-desc
+{
+	line-height: 2em;
+	font-size: .8em;
+	padding-left: 2%;
+	color: #333;
+}
+
+.table-content-link
+{
+	display: block;
+	line-height: 2.9em;
+	margin-left: 10px;
+}
+
+.table-content-files
+{
+	display: table;
+}
+
+.table-content-files-image, .table-content-files-text
+{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.table-content-files-image img
+{
+	min-width: 40px;
+}
+
+
+
+
+
+
+
+

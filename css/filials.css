@@ -1,0 +1,288 @@
+/* Filials */
+/**********************************************************************************************************************/
+.filials a
+{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+
+.filials a:hover
+{
+	box-shadow: 0px 0px 7px rgba(0,0,0,0.3);
+}
+
+.filials-row:hover .filials-title
+{
+	color: #2f73e3;
+}
+
+.filials-wrapper
+{
+	width: 50%;
+	margin: 1.5em auto;
+	padding: 2em 0;
+}
+
+.filials-wrapper::before, .filial-wrapper::before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: .1;
+	z-index: -1;
+
+	background: url(../images/main/filials-bg.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.filials-image
+{
+	position: absolute;
+}
+
+.filials-image img
+{
+	width: 290px;
+	height: 260px
+	min-width: 290px;
+}
+
+.filials-title
+{
+	width: 55.5%;
+	float: right;
+	padding: 0em 2em 1em;
+	text-align: right;
+}
+
+.filials-title h2
+{
+	text-transform: uppercase;
+	font-size: 2em;
+}
+
+.filials-row
+{
+	position: relative;
+	min-height: 260px;
+	border-bottom: 1px dashed silver;
+	padding: 2em 0;
+}
+
+.filials-row:last-child
+{
+	border: none !important;
+}
+
+
+
+/* Filial single page */
+/**********************************************************************************************************************/
+
+.filial-wrapper
+{
+	width: 50%;
+	margin: 1.5em auto;
+	padding: 2em 0;
+}
+
+.filial
+{
+	width: 100%;
+	min-height: 445px;
+	position: relative;
+}
+
+.filial-common-info-content
+{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.filial-common-info-bg
+{
+	height: 100%;
+}
+
+.filial-common-info-bg img
+{
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: .4;
+}
+
+.filial-common-info-content-in
+{
+	position: relative;
+	z-index: 2;
+	display: table;
+	overflow: hidden;
+	width: 96%;
+	height: 100%;
+	padding: 0 2%;
+}
+
+.filial-common-info-content-in-text
+{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+
+	text-transform: uppercase;
+	color: #333;
+	font-size: 1.1em;
+}
+
+.filial-common-info-content-in-text div
+{
+	margin: .5em auto;
+}
+
+.filial-common-info-content-in-text h2
+{
+	font-size: 2em;
+	color: #feb52c;
+	text-shadow: 0 0 5px #555, 0 0 10px #555, 0 0 15px #555, 0 0 20px #fff, 0 0 35px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 75px #fff;
+}
+
+.filial-common-info-content-in-text img
+{
+	vertical-align: middle;
+	margin-top: -5px;
+}
+
+.filial-workers
+{
+	display: table;
+
+	width: 100%;
+	height: 165px;
+}
+
+.filial-workers-item
+{
+	display: table-cell;
+	vertical-align: middle;
+
+	width: 33.333333333333333333333333333333%;
+	min-height: 270px;
+}
+
+.filial-workers-item-fio
+{
+	width: 125px;
+	padding: 5px;
+
+	color: white;
+	background: #feb52c;
+
+	-webkit-box-shadow: 0 3px 4px 0 rgba(0,0,0,0.15);
+	-moz-box-shadow: 0 3px 4px 0 rgba(0,0,0,0.15);
+	box-shadow: 0 3px 4px 0 rgba(0,0,0,0.15);
+}
+
+.filial-additional-info
+{
+	padding-top: 1em;
+}
+
+.filial-additional-info a
+{
+	color: #333;
+	border-bottom: 1px dashed #333;
+}
+
+.filial-additional-info a:hover
+{
+	border: none;
+}
+
+.filial-about
+{
+	width: 75%;
+
+	margin: 0 auto;
+	padding-top: 4em;
+}
+
+.filial-about p
+{
+	font-size: 1.2em;
+	text-align: justify;
+	line-height: 1.4em;
+}
+
+.filial-about-list
+{
+    font-size: 1.2em;
+    padding-left: 1em;
+}
+
+.filial-about-list li
+{
+    margin-bottom: .5em;
+    line-height: 1.5em;
+}
+
+
+/* Media queries */
+/**********************************************************************************************************************/
+
+@media screen and (max-width: 1192px)
+{
+
+	.filials-title h2
+	{
+		font-size: 1.5em;
+	}
+
+	.filials-adress
+	{
+		font-size: .9em;
+	}
+
+}
+
+
+/* Large Devices, Wide Screens */
+@media screen and (max-width: 1280px)
+{
+
+	.filials-title h2
+	{
+		font-size: 1.5em;
+	}
+
+	.filials-adress
+	{
+		font-size: .9em;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+}

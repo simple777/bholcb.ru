@@ -1,0 +1,96 @@
+/* Tabs */
+/**********************************************************************************************************************/
+
+.tabs
+{
+	display: inline-block;
+	width: 100%;
+}
+
+.tabs > div
+{
+	padding-top: 10px;
+}
+
+.tabs ul
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+.tabs ul:after
+{
+	content: "";
+	display: block;
+	clear: both;
+	height: 5px;
+	background: #feb52c;
+}
+
+.tabs ul li
+{
+	margin: 0px;
+	padding: 0px;
+	cursor: pointer;
+	display: block;
+	float: left;
+	padding: 10px 15px;
+	/*background: #e9eaeb;*/
+	color: #000;
+}
+
+.tabs ul li.active, .tabs ul li.active:hover
+{
+	background: #feb52c;
+	color: #fff;
+}
+
+.tabs ul li:hover
+{
+	background: #d6d6d7;
+}
+
+
+
+/* Overload styles for View: 'services.php' */
+
+.readers-services .tabs ul
+{
+	display: table;
+	width: 100%;
+}
+
+.readers-services .tabs ul li
+{
+	display: table-cell;
+	float: none;
+	padding: 2em 1em;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.readers-services .tabs ul li img
+{
+	vertical-align: middle;
+}
+
+.readers-services .tabs ul li.active, .readers-services .tabs ul li.active:hover
+{
+	background: #eee;
+	color: black;
+	outline: 1px dashed #777;
+	outline-offset:-5px;
+}
+
+.readers-services .tabs ul li span
+{
+	padding-left: 5%;
+	font-size: 1.5em;
+}
+
+.readers-services .tabs ul li:hover
+{
+	outline: 1px dashed black;
+	outline-offset:-5px;
+	background: none;
+}

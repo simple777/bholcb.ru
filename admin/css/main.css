@@ -1,0 +1,251 @@
+/* Additional */
+/**********************************************************************************************************************/
+
+/*width less then parent block*/
+img, iframe, video, embed 
+{
+	max-width: 100% !important;
+	height: auto;
+}
+
+/*clearfix*/
+.clearfix:before, .clearfix:after { 
+  content: ""; 
+  display: table
+}
+.clearfix:after { 
+  clear: both
+}
+.clearfix { 
+  zoom: 1 /* IE6&7 */ 
+}
+
+a 
+{	
+	text-decoration: none;
+}
+
+
+
+/* Typography */
+/**********************************************************************************************************************/
+
+.rounded-corners {
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	border-radius: 100px;
+	behavior: url(PIE.htc); /* IE < 9 */
+}
+
+.rounded-corners-5px
+{
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(PIE.htc);
+}
+
+
+
+/* Layout */
+/**********************************************************************************************************************/
+
+body, html
+{
+	font-family: Roboto Condensed, Arial, Helvetica, Sans-serif;
+    height: 100%;
+}
+
+body h1,h2,h3,h4,h5,h6 
+{
+	font-weight: normal !important;
+}
+
+.page-wrapper 
+{
+	position: relative;
+	width: 100%;
+	min-width: 992px;
+	overflow: hidden;
+}
+
+.h-devider 
+{
+	position: relative;
+	z-index: 2;
+	width: 100%;
+    height: 50px;
+	background: #feb52c;
+}
+.h-devider-shadow 
+{
+	-webkit-box-shadow: 0 3px 4px 0 rgba(0,0,0,0.75);
+	-moz-box-shadow: 0 3px 4px 0 rgba(0,0,0,0.75);
+	box-shadow: 0 3px 4px 0 rgba(0,0,0,0.75);
+}
+
+.img_preload
+{
+	width: 0px;
+	height: 0px;
+	display: inline;
+	/*background-image: url('../images/aside/menu-left-a-bg-hover.png');*/
+	/* other images for preloading */
+}
+
+
+
+/**********************************************************************************************************************/
+
+.admin-header
+{
+	height: 3em;
+	width: 100%;
+	background: #feb52c;
+}
+
+.admin-header p
+{
+	font-size: 1em;
+	text-transform: uppercase;
+	letter-spacing: .4em;
+	padding-left: 1em;
+}
+
+.admin-page-wrapper
+{
+	position: relative;
+	width: 99%;
+	height: 100%;
+}
+
+.admin-content-wrapper
+{
+	width: 100%;
+	height: 90%;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+
+.admin-menu-left
+{
+	width: 8%;
+	height: 100%;
+	float: left;
+	border-right: 1px dashed #777;
+
+}
+
+.admin-content-wrapper-in
+{
+	width: 83%;
+	float: right;
+	padding: 0 4em 0 1em;
+}
+
+.admin-content
+{
+	width: 45%;
+	float: left;
+}
+
+.admin-menu-left-list a
+{
+	display: block;
+	padding: 2em;
+
+	color: #000;
+
+	transition: .5s;
+}
+
+.admin-menu-left-list a:hover
+{
+	color: #2f73e3;
+
+	outline: 1px dashed #2f73e3;
+	outline-offset:-15px;
+}
+
+/* Controls */
+
+.admin-content-control-panel
+{
+	width: 100%;
+	height: 47px;
+	margin-bottom: 1em;
+	background: #fffdfb;
+}
+
+
+
+/* Sidebar right */
+
+.admin-sidebar-wrapper
+{
+	width: 40%;
+	float: right;
+}
+
+
+
+/* Form */
+/**********************************************************************************************************************/
+
+.admin-form
+{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.admin-input
+{
+	width: 100%;
+	margin: .5em 0;
+}
+
+.admin-form textarea
+{
+	width: 100%;
+	height: 400px;
+}
+
+.description
+{
+	height: 100px !important;
+}
+
+.admin-form-submit
+{
+	width: 20%;
+	height: 50px;
+	margin: 2em auto;
+}
+
+
+
+/* Image preview sidebar */
+
+.images-preview-wrapper
+{
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.images-preview
+{
+
+}
+
+.images-preview-text
+{
+	font-size: 12px;
+}
+
+#gallery-html
+{
+	word-wrap: break-word;
+	width: 450px;
+	height: 350px;
+}

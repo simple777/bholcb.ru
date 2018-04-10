@@ -1,0 +1,205 @@
+/* Work - Competitions */
+/**********************************************************************************************************************/
+
+.work-competitions-wrapper
+{
+	width: 65%;
+	margin: 1.5em auto;
+}
+
+.work-competitions-wrapper::before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: .7;
+	z-index: -1;
+
+	background: url(../images/pages/readers-services-bg.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.work-competitions
+{
+	background: white;
+	opacity: .95;
+	padding: 7% 10%;
+}
+
+.work-competitions h2
+{
+	text-transform: uppercase;
+	margin: 1em auto;
+	text-align: center;
+	padding-bottom: 1em;
+}
+
+/* Work - Programs */
+/**********************************************************************************************************************/
+
+.work-programs-wrapper
+{
+	width: 65%;
+	margin: 1.5em auto;
+}
+
+.work-programs-wrapper::before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: .7;
+	z-index: -1;
+
+	background: url(../images/pages/readers-services-bg.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.work-programs
+{
+	background: white;
+	opacity: .95;
+	padding: 7% 10%;
+}
+
+.work-programs h2
+{
+	text-transform: uppercase;
+	margin: 1em auto;
+	text-align: center;
+	padding-bottom: 1em;
+}
+
+/* Overload tables.css styles*/
+
+.work-programs .table-content-files-text
+{
+	text-align: left;
+}
+
+
+/* Work - Work-table */
+/**********************************************************************************************************************/
+
+.work-table-wrapper
+{
+	width: 65%;
+	margin: 1.5em auto;
+}
+
+.work-table-wrapper::before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: .7;
+	z-index: -1;
+
+	background: url(../images/pages/readers-services-bg.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.work-table
+{
+	background: white;
+	opacity: .95;
+	padding: 7% 10%;
+}
+
+.work-table h2
+{
+	text-transform: uppercase;
+	margin: 1em auto;
+	text-align: center;
+	padding-bottom: 1em;
+}
+
+.work-table h3
+{
+	text-transform: uppercase;
+	margin: 1em auto;
+	text-align: center;
+	padding: 10px;
+	background: #feb52c;
+}
+
+/* Work - Research */
+/**********************************************************************************************************************/
+
+.work-research-wrapper
+{
+	width: 65%;
+	margin: 1.5em auto;
+}
+
+.work-research-wrapper::before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: .7;
+	z-index: -1;
+
+	background: url(../images/pages/readers-services-bg.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.work-research
+{
+	background: white;
+	opacity: .95;
+	padding: 7% 10%;
+}
+
+.work-research h2
+{
+	text-transform: uppercase;
+	margin: 1em auto;
+	text-align: center;
+	padding-bottom: 1em;
+}
+
+.work-research h3
+{
+	text-transform: uppercase;
+	margin: 1em auto;
+	text-align: center;
+	padding: 10px;
+	background: #feb52c;
+}
+
+/* Overload tables.css styles */
+
+
+
+/*Preloading images*/
+/**********************************************************************************************************************/
+
+.img_preload
+{
+
+}

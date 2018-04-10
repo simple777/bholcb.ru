@@ -1,0 +1,451 @@
+.visible
+{
+    opacity: 1 !important;
+    transition: .3s;
+}
+
+/* Good vision control panel */
+/**********************************************************************************************************************/
+
+.good-vision-menu-wrapper
+{
+	width: 70%;
+	height: 100%;
+	margin: 0 auto;
+    background: #2f73e3 !important;
+    opacity: 0;
+}
+
+.good-vision-style .h-devider
+{
+    background: #2f73e3;
+}
+
+.good-vision-menu
+{
+	width: 90%;
+	height: 100%;
+	margin: 0 auto;
+	display: table;
+    background: #2f73e3;
+}
+
+.good-vision-menu div
+{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.good-vision-font, .good-vision-font > div
+{
+	color: #fff !important;
+    background: #2f73e3 !important;
+}
+
+.good-vision-font-text
+{
+	margin-right: 10px;
+}
+
+.good-vision-font-items > div, .good-vision-theme-items > div
+{
+	color: #fff !important;
+	background: #000 !important;
+}
+
+.good-vision-font-items > div.good-vision-font-item-active, .good-vision-theme-items > div.good-vision-theme-item-active
+{
+   /* color: #000 !important;
+    background: #fff !important;*/
+    border-bottom: 2px solid red;
+
+}
+
+.good-vision-font-item, .good-vision-theme-item
+{
+	width: 30px;
+	height: 30px;
+	margin-left: 5px;
+	text-align: center;
+	outline: 1px solid #6c98e2;
+}
+
+.good-vision-font-item:hover, .good-vision-theme-item:hover
+{
+	cursor: pointer;
+}
+
+.f1
+{
+	font-size: 14px;
+}
+
+.f2
+{
+	font-size: 16px;
+}
+
+.f3
+{
+	font-size: 22px;
+}
+
+.good-vision-theme, .good-vision-theme > div
+{
+	color: #fff !important;
+    background: #2f73e3 !important;
+}
+
+.good-vision-theme-text
+{
+
+}
+
+.good-vision-theme-items
+{
+
+}
+
+.good-vision-theme-items > div.t1
+{
+    background: white !important;
+    color: black !important;
+}
+
+.good-vision-theme-items > div.t2
+{
+    background: black !important;
+    color: white !important;
+}
+
+.good-vision-theme-items > div.t3
+{
+    background: #a3cdfe !important;
+    color: #1e3361 !important;
+}
+
+.good-vision-img, .good-vision-img > div
+{
+	color: #fff !important;
+    background: #2f73e3 !important;
+}
+
+.good-vision-img-text
+{
+
+}
+
+.good-vision-img-switcher
+{
+
+}
+
+.good-vision-options
+{
+	color: #fff !important;
+	text-decoration: underline;
+    background: #2f73e3 !important;
+}
+
+.good-vision-options:hover
+{
+	cursor: pointer;
+}
+
+.good-vision-font-item-active, .good-vision-theme-item-active
+{
+	color: #000 !important;
+	background: #fff !important;
+	border-bottom: 1px solid black;
+}
+
+/* Font */
+/**********************************************************************************************************************/
+
+.gv-fs-small
+{
+	font-size: 14px !important;
+}
+
+.gv-fs-normal
+{
+	font-size: 16px !important;
+}
+
+.gv-fs-big
+{
+	font-size: 20px !important;
+}
+
+body .good-vision-menu
+{
+	font-size: 16px !important;
+}
+
+.gv-fs-big .logo-content-in-text > h1
+{
+	font-size: 1.6em !important;
+}
+
+.gv-fs-big .slide-text-wrapper > h2
+{
+	font-size: 1.6em !important;
+}
+
+.gv-fs-big .services-list
+{
+	height: 205px;
+}
+
+
+
+/* Image */
+/**********************************************************************************************************************/
+.gv-img-off img
+{
+	/*opacity: 0;*/
+	/*visibility: hidden;*/
+	filter: brightness(0) !important;
+}
+
+.good-vision-img-switcher
+{
+
+}
+
+.good-vision-img-switch-wrapper
+{
+
+}
+
+.good-vision-img-switch-but
+{
+	padding: 3px;
+	width: 80px;
+	background: black;
+	color: white;
+	text-align: center;
+}
+
+.good-vision-img-switch-but:hover
+{
+	cursor: pointer;
+}
+
+.good-vision-style .good-vision
+{
+    background: url('../images/navigation/ico-good-vision.png') no-repeat center center !important;
+}
+
+
+
+/* Common colors for all [good vision] themes */
+
+.good-vision-style .logo-background img, .good-vision-style .slider-background img
+{
+    visibility: hidden;
+}
+
+.good-vision-style .menu-drop li
+{
+    border: 1px solid black;
+}
+
+.good-vision-style .menu-drop li a:hover
+{
+    outline: none !important;
+}
+
+.good-vision-style .content-line-block-3:hover .content-line-block-content-in-text > h2
+{
+    text-shadow: none !important;
+}
+
+.good-vision-style .slider-wrapper
+{
+    outline: none !important;
+}
+
+.good-vision-style .menu-arrow
+{
+    opacity: 0 !important;
+}
+
+.good-vision-style .footer-nav-list li a:hover
+{
+    border: none !important;
+}
+
+.good-vision-style .menu-drop
+{
+    border-top: none !important;
+}
+
+    /* Black and White theme colors */
+
+.gv-th-blackwhite div, .gv-th-blackwhite section, .gv-th-blackwhite header, .gv-th-blackwhite nav, .gv-th-blackwhite footer, .gv-th-blackwhite main,
+.gv-th-blackwhite article, .gv-th-blackwhite menu, .gv-th-blackwhite menu > li, .gv-th-blackwhite p,
+.gv-th-blackwhite h1, .gv-th-blackwhite h2, .gv-th-blackwhite h3, .gv-th-blackwhite h4, .gv-th-blackwhite h5, .gv-th-blackwhite h6,
+.gv-th-blackwhite ul, .gv-th-blackwhite ul li
+
+{
+    background: white;
+    color: black;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+.gv-th-blackwhite a
+{
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+.gv-th-blackwhite a:hover
+{
+    color: white !important;
+    background: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    outline: 1px solid black !important;
+}
+
+.gv-th-blackwhite .logo-content-link:hover
+{
+    background: transparent !important;
+}
+
+.gv-th-blackwhite .logo:hover h1
+{
+    text-decoration: underline;
+}
+
+.gv-th-blackwhite .content-line-block-link:hover
+{
+    background: transparent !important;
+}
+
+.gv-th-blackwhite .content-line-block-3:hover .content-line-block-content-in-text > h2
+{
+    color: black !important;
+    text-decoration: underline;
+}
+
+.gv-th-blackwhite .good-vision
+{
+    background: url('../images/navigation/ico-good-vision_black.png') no-repeat center center !important;
+}
+
+
+/* White and Black theme colors */
+
+.gv-th-whiteblack div, .gv-th-whiteblack section, .gv-th-whiteblack header, .gv-th-whiteblack nav, .gv-th-whiteblack footer, .gv-th-whiteblack main,
+.gv-th-whiteblack article, .gv-th-whiteblack menu, .gv-th-whiteblack menu > li, .gv-th-whiteblack p,
+.gv-th-whiteblack h1, .gv-th-whiteblack h2, .gv-th-whiteblack h3, .gv-th-whiteblack h4, .gv-th-whiteblack h5, .gv-th-whiteblack h6,
+.gv-th-whiteblack ul, .gv-th-whiteblack ul li
+
+{
+    background: black;
+    color: white;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+.gv-th-whiteblack a
+{
+    background: transparent !important;
+    color: white !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+.gv-th-whiteblack a:hover
+{
+    color: black !important;
+    background: white !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    outline: 1px solid white !important;
+}
+
+.gv-th-whiteblack .logo-content-link:hover
+{
+    background: transparent !important;
+}
+
+.gv-th-whiteblack .logo:hover h1
+{
+    text-decoration: underline;
+}
+
+.gv-th-whiteblack .content-line-block-link:hover
+{
+    background: transparent !important;
+}
+
+.gv-th-whiteblack .content-line-block-3:hover .content-line-block-content-in-text > h2
+{
+    color: white !important;
+    text-decoration: underline;
+}
+
+
+
+/* Blue theme colors */
+
+.gv-th-blue div, .gv-th-blue section, .gv-th-blue header, .gv-th-blue nav, .gv-th-blue footer, .gv-th-blue main,
+.gv-th-blue article, .gv-th-blue menu, .gv-th-blue menu > li, .gv-th-blue p,
+.gv-th-blue h1, .gv-th-blue h2, .gv-th-blue h3, .gv-th-blue h4, .gv-th-blue h5, .gv-th-blue h6,
+.gv-th-blue ul, .gv-th-blue ul li
+
+{
+    background: #a3cdfe;
+    color: #1e3361;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+.gv-th-blue a
+{
+    background: transparent !important;
+    color: #1e3361 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+.gv-th-blue a:hover
+{
+    color: #1e3361 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    text-decoration: underline !important;
+    outline: 1px solid #1e3361 !important;
+}
+
+.gv-th-blue .logo-content-link:hover
+{
+    background: transparent !important;
+}
+
+.gv-th-blue .logo:hover h1
+{
+    text-decoration: underline;
+}
+
+.gv-th-blue .content-line-block-link:hover
+{
+    background: transparent !important;
+}
+
+.gv-th-blue .content-line-block-3:hover .content-line-block-content-in-text > h2
+{
+    color: #1e3361 !important;
+    text-decoration: underline;
+}
+
+.gv-th-blue .good-vision
+{
+    background: url('../images/navigation/ico-good-vision_blue.png') no-repeat center center !important;
+}

@@ -1,0 +1,117 @@
+/* Afisha */
+/**********************************************************************************************************************/
+
+.afisha-wrapper
+{
+    width: 100%;
+    min-height: 500px;
+    margin: 0 auto;
+    padding: 5px 0;
+}
+
+.afisha-wrapper::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+    z-index: -1;
+
+    background: url(../images/afisha/remont-bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.afisha-wrapper.custom3::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .3;
+    z-index: -1;
+
+    background: url(../media/afisha/oblastnye-dni-vjatskoj-knigi/page-bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.afisha
+{
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 2em;
+}
+
+.afisha h2, .afisha p
+{
+    font-size: 4em;
+    text-transform: uppercase;
+    color: #5c4746;
+    text-align: center;
+
+    text-shadow: 0 0 20px #fff, 0 0 10px #ffffff, 0 0 15px #ffffff, 0 0 3px #ffffff, 0 0 3px #ffffff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff;
+}
+
+.afisha p
+{
+    font-size: 2em;
+}
+
+.afisha h2
+{
+    color: #e0825b;
+}
+
+/*Afisha custom styles: oblastnye-dni-vjatskoj-knigi.php*/
+/**********************************************************************************************************************/
+
+.afisha-authors-list-wrapper
+{
+    margin: 4em 0;
+}
+
+.afisha-authors-list
+{
+    display: table;
+    width: 100%;
+}
+
+.afisha-authors-list-item
+{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.afisha-authors-list-item img
+{
+    border-radius: 50%;
+    opacity: .4;
+    border: 5px solid white;
+    transition: .3s;
+}
+
+.afisha-authors-list-item img:hover
+{
+    opacity: .9;
+    border: 5px solid #e0825b;
+}
+
+
+/*Preloading images*/
+/**********************************************************************************************************************/
+
+.img_preload
+{
+
+}
