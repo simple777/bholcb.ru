@@ -44,40 +44,33 @@ $(document).ready(function(){
                /* Font */
                 var gvFontSize = localStorage.getItem('good-vision-font-size');
 
-                if (!gvFontSize)  //if fontsize not saved in localstorage - save it
+                if (gvFontSize === null)  //if fontsize not saved in localstorage - save it
                 {
-                    localStorage.setItem('good-vision-font-size', 'gv-fs-normal');
+                    gvFontSize = $('.good-vision-font-items').find('.good-vision-font-item-active').data('fs');
+                    localStorage.setItem('good-vision-font-size', gvFontSize);
                 }
 
-                else //else load font from localstorage
-
-                {
-                    $("body").addClass(gvFontSize);
-                }
+                $("body").addClass(gvFontSize);
 
 
 
                 /* Theme */
                 var gvTheme = localStorage.getItem('good-vision-theme');
 
-                if (!gvTheme)  //if theme not saved in localstorage - save it
+                if (gvTheme === null)  //if theme not saved in localstorage - save it
                 {
-                    localStorage.setItem('good-vision-theme', 'gv-th-blackwhite');
+                    gvTheme = $('.good-vision-theme-items').find('.good-vision-theme-item-active').data('th');
+                    localStorage.setItem('good-vision-theme', gvTheme);
                 }
 
-                else //else load font from localstorage
-
-                {
-                    $("body").addClass(gvTheme);
-                }
-
+                $("body").addClass(gvTheme);
 
 
                 /* Images */
                 var gvImageOff = localStorage.getItem('good-vision-image');
                 var gvImageClass = 'gv-img-off';
 
-                if (!gvImageOff)
+                if (gvImageOff === null)
                 {
                     localStorage.setItem('good-vision-image', 'on');
                 }
