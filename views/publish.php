@@ -1,24 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="<?php echo SITEURL;?>favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
-	<meta name="description" content="официальный сайт МБУК Белохолуницкая центральная библиотека">
-	<meta name="keywords" content="белохолуницкая, библиотека, официальный сайт, библиотека, белая холуница">
-	<title>МБУК Белохолуницкая центральная библиотека официальный сайт</title>
-	<link rel="stylesheet" href="<?php echo SITEURL;?>css/normalize.min.css">
-	<link rel="stylesheet" href="<?php echo SITEURL;?>css/main.css">
-	<link rel="stylesheet" href="<?php echo SITEURL;?>css/good-vision.css">
+    <?php include_once  SITEROOTDIR.'views/main/head_meta.php'; ?>
+    <meta name="description" content="официальный сайт МБУК Белохолуницкая центральная библиотека">
+    <meta name="keywords" content="белохолуницкая, библиотека, официальный сайт, библиотека, белая холуница">
+    <title>МБУК Белохолуницкая центральная библиотека официальный сайт - Издания</title>
+    <?php include_once  SITEROOTDIR.'views/main/head_libs.php'; ?>
     <link rel="stylesheet" href="<?php echo SITEURL;?>css/publish.css">
     <link rel="stylesheet" href="<?php echo SITEURL;?>css/tabs.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-	
-	<!--[if lt IE 9]>
-	<script src="<?php echo SITEURL;?>js/html5shiv.js"></script>
-	<![endif]-->
-
+    <?php include_once  SITEROOTDIR.'views/main/head_font.php'; ?>
+    <?php include_once  SITEROOTDIR.'views/main/head_add_libs.php'; ?>
 </head>
 
 <body>
