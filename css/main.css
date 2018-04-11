@@ -65,9 +65,18 @@ span.border-dashed
 /* Layout */
 /**********************************************************************************************************************/
 
+@font-face {
+	font-family: 'Roboto';
+	src: url('../font/Robotocondensed.woff2') format('woff2'),
+	url('../font/Robotocondensed.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */
+	url('../font/Robotocondensed.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
 body, html
 {
-	font-family: Roboto Condensed, Arial, Helvetica, Sans-serif;
+	font-family: Roboto, Arial, Helvetica, Sans-serif;
     height: 100%;
 }
 

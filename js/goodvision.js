@@ -134,6 +134,11 @@ $(document).ready(function(){
             var activeFont = activeItem.data("fs");
             var newFont = $(this).data("fs");
 
+            console.log(activeItemClass);
+            console.log(activeItem);
+            console.log(activeFont);
+            console.log(newFont);
+
         /* change body font */
             $("body").removeClass(activeFont);
             $("body").addClass(newFont);
