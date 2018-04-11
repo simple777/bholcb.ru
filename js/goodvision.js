@@ -134,11 +134,6 @@ $(document).ready(function(){
             var activeFont = activeItem.data("fs");
             var newFont = $(this).data("fs");
 
-            console.log(activeItemClass);
-            console.log(activeItem);
-            console.log(activeFont);
-            console.log(newFont);
-
         /* change body font */
             $("body").removeClass(activeFont);
             $("body").addClass(newFont);
@@ -227,87 +222,75 @@ $(document).ready(function(){
     function good_vision_On(switcher)
 
     {
-        if (switcher) {
+        if (switcher) if (switcher == '1') {
+            $("body").addClass("good-vision-style");
 
-            if (switcher == '1')
-            {
-                $("body").addClass("good-vision-style");
-
-                //and show [good vision] control panel
-                $(".good-vision-menu-wrapper").addClass('visible');
-
+            //and show [good vision] control panel
+            $(".good-vision-menu-wrapper").addClass('visible');
 
 
             /* Font init from localstorage */
 
-                var font =  localStorage.getItem('good-vision-font-size');
+            var font = localStorage.getItem('good-vision-font-size');
 
-                if (font)
-                {
-                    $("body").addClass(font);
+            if (font != null) {
+                $("body").addClass(font);
 
-                    var activeItemClass = "good-vision-font-item-active";
-                    var activeItem = $("."+activeItemClass);
-                    var newactiveItem = $(".good-vision-font-items").children('[data-fs="'+font+'"]');
+                var activeItemClass = "good-vision-font-item-active";
+                var activeItem = $("." + activeItemClass);
+                var newactiveItem = $(".good-vision-font-items").children('[data-fs="' + font + '"]');
 
-                    activeItem.removeClass(activeItemClass);
-                    newactiveItem.addClass(activeItemClass);
+                activeItem.removeClass(activeItemClass);
+                newactiveItem.addClass(activeItemClass);
 
-                }
-
+            }
 
 
             /* Theme init from localstorage */
 
-                var theme =  localStorage.getItem('good-vision-theme');
+            var theme = localStorage.getItem('good-vision-theme');
 
-                if (theme)
-                {
-                    $("body").addClass(theme);
+            if (theme) {
+                $("body").addClass(theme);
 
-                    var activeItemClass = "good-vision-theme-item-active";
-                    var activeItem = $("."+activeItemClass);
-                    var newactiveItem = $(".good-vision-theme-items").children('[data-th="'+theme+'"]');
+                var activeItemClass = "good-vision-theme-item-active";
+                var activeItem = $("." + activeItemClass);
+                var newactiveItem = $(".good-vision-theme-items").children('[data-th="' + theme + '"]');
 
-                    activeItem.removeClass(activeItemClass);
-                    newactiveItem.addClass(activeItemClass);
+                activeItem.removeClass(activeItemClass);
+                newactiveItem.addClass(activeItemClass);
 
-                }
-
+            }
 
 
             /* Images init from localstorage */
 
-                    var imgOff =  localStorage.getItem('good-vision-image');
-                    var imgOffClass= 'gv-img-off';
-                    var imgOffClassActive = 'good-vision-img-switch-but-active';
+            var imgOff = localStorage.getItem('good-vision-image');
+            var imgOffClass = 'gv-img-off';
+            var imgOffClassActive = 'good-vision-img-switch-but-active';
 
-                    if (imgOff == 'off')
-                    {
-                        $("body").addClass(imgOffClass);
-                        $(".good-vision-img-switch-but").addClass(imgOffClassActive);
-                        $("."+imgOffClassActive).text('Включить');
+            if (imgOff == 'off') {
+                $("body").addClass(imgOffClass);
+                $(".good-vision-img-switch-but").addClass(imgOffClassActive);
+                $("." + imgOffClassActive).text('Включить');
 
-                    }
-
-
-                return true; //gv ON
             }
 
-            else
-            {
-                $("body").removeClass("good-vision-style");
 
-                return false; //gv OFF
-            }
+            return true; //gv ON
+        }
 
+        else {
+            $("body").removeClass("good-vision-style");
+
+            return false; //gv OFF
         }
     }
 
 
 
-/* Main code */
-/**********************************************************************************************************************/
+    /* Main code */
+    /**********************************************************************************************************************/
 
     /* Good vision mode: on/off */
 

@@ -10,6 +10,8 @@ require_once __DIR__.'/../config.php';
  *
  */
 
+/**********************************************************************************************************************/
+
 function img_preview_square($file, $size, $quality)
 {
     // Выставляем заголовок
@@ -53,7 +55,6 @@ function img_preview_square($file, $size, $quality)
 
     // Выводим изображение
     return imagejpeg($thumbs, $file, $quality);//Сохраняет JPEG/PNG/GIF изображение
-
 }
 
 
@@ -64,6 +65,8 @@ function img_preview_square($file, $size, $quality)
  * string $dir - директория, в которой выполнить тело функции
  *
  */
+
+/**********************************************************************************************************************/
 
 function img_resize($filename, $max_width, $max_height, $quality)
 {
@@ -115,90 +118,6 @@ function img_resize($filename, $max_width, $max_height, $quality)
 
         //return $image_p;
         return imagejpeg($image_p, $filename, $quality);//Сохраняет JPEG/PNG/GIF изображение
-}
-
-
-
-
-
-
-
-
-
-/********************************************************/
-
-
-
-function make_gallery($directory, $url)
-{
-
-    /*$directory = 'gallery';*/
-
-    $allowed_types = array('jpg','jpeg','gif','png');
-    $file_parts = array();
-    $ext = '';
-    $title = '';
-    $i = 0;
-
-    $dir_handle = @opendir($directory) or die("There is an error with your image directory!");
-
-    while ($file = readdir($dir_handle))
-    {
-
-        //var_dump($file); exit;
-
-        /* Rename files in folder like: 1.jpg, 2.jpg, 3.jpg etc */
-
-        //$basepath = '/path/to/folder';
-
-
-        /*
-        $filelist = scandir($directory);
-
-        $k = 1;
-
-        foreach($filelist as $filename)
-        {
-            if( $filename !== '.' && $filename !== '..' && is_dir($filename) == false )
-            {
-                rename ($directory.'/'.$filename, $directory.'/'.$k.'.jpg');
-                $k++;
-            }
-        }
-
-        */
-
-
-        /* */
-
-
-        if ($file == '.' || $file == '..') continue;
-
-        $file_parts = explode('.',$file);
-        $ext = strtolower(array_pop($file_parts));
-
-        $title = implode('.',$file_parts);
-        $title = htmlspecialchars($title);
-
-        $nomargin='';
-
-        if(in_array($ext,$allowed_types))
-        {
-            if(($i+1)%4==0) $nomargin='nomargin';
-
-
-
-            echo '
-		<div class="pic '.$nomargin.'" style="background:url('.$url.'/'.$file.') no-repeat 50% 50%;">
-		<a href="'.$directory.'/'.$file.'" title="'.$title.'" target="_blank">'.$title.'</a>
-		</div>';
-
-            $i++;
-        }
-    }
-
-    closedir($dir_handle);
-
 }
 
 

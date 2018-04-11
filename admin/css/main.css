@@ -34,7 +34,6 @@ a
 	-moz-border-radius: 100px;
 	-webkit-border-radius: 100px;
 	border-radius: 100px;
-	behavior: url(PIE.htc); /* IE < 9 */
 }
 
 .rounded-corners-5px
@@ -42,7 +41,6 @@ a
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
-	behavior: url(PIE.htc);
 }
 
 

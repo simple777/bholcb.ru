@@ -160,7 +160,7 @@
     .circle-menu .occupational { transform: rotate(102deg) translate(15em) rotate(-102deg); -webkit-transform: rotate(102deg) translate(15em) rotate(-102deg); -ms-transform: rotate(102deg) translate(15em) rotate(-102deg);}
     .circle-menu .emotional { transform: rotate(153deg) translate(15em) rotate(-153deg); -webkit-transform: rotate(153deg) translate(15em) rotate(-153deg); -ms-transform: rotate(153deg) translate(15em) rotate(-153deg);}
     .circle-menu .environmental { transform: rotate(204deg) translate(15em) rotate(-204deg); -webkit-transform: rotate(204deg) translate(15em) rotate(-204deg); -ms-transform:rotate(204deg) translate(15em) rotate(-204deg);}
-    .circle-menu .intellectual { transform: rotate(255deg) translate(15em) rotate(-255deg); -webkit-transform: rotate(255deg) translate(15em) rotate(-255deg); -ms-transform: rotate(255deg) translate(15em) rotate(-255eg);}
+    .circle-menu .intellectual { transform: rotate(255deg) translate(15em) rotate(-255deg); -webkit-transform: rotate(255deg) translate(15em) rotate(-255deg); -ms-transform: rotate(255deg) translate(15em) rotate(-255deg);}
     .circle-menu .social { transform: rotate(306deg) translate(15em) rotate(-306deg); -webkit-transform: rotate(306deg) translate(15em) rotate(-306deg); -ms-transform: rotate(306deg) translate(15em) rotate(-306deg);}
     .circle-menu .physical { transform: rotate(357deg) translate(15em) rotate(-357deg); -webkit-transform: rotate(357deg) translate(15em) rotate(-357deg); -ms-transform: rotate(357deg) translate(15em) rotate(-357deg);}
 

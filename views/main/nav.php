@@ -43,9 +43,9 @@
 
     <section class="nav-side-menu">
         <div class="good-vision"></div>
+        <div class="but-vk"><a href="https://vk.com/id359922818" target="_blank"></a></div>
         <div class="site-search"></div>
         <div class="but-mail"></div>
-        <div class="but-vk"></div>
         <div class="but-youtube"></div>
     </section>
 
