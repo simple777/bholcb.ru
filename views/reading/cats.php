@@ -210,8 +210,7 @@
 
 		<?php include_once  SITEROOTDIR.'views/main/footer.php'; ?>
 
-
-        <div id="back-top"><a href="#top"><div class="back-top-arrow"></div><span></span>Вверх</a></div>
+        <?php include_once  SITEROOTDIR.'views/main/back_top.php'; ?>
 
 	</div>
 

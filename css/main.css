@@ -994,14 +994,18 @@ nav a
 
 .back-top-arrow
 {
+	/*left: 32%;*/
+	/*top: 26%;*/
+	/*border-left: 10px solid #57534d;
+	border-right: 10px solid #57534d;
+	border-bottom: 20px solid #ffff !important;*/
+
 	position: absolute;
-	left: 32%;
-	top: 26%;
+	left: 38%;
+	top: 13%;
 	width: 0;
 	height: 0;
-	border-left: 10px solid #57534d;
-	border-right: 10px solid #57534d;
-	border-bottom: 20px solid #ffff !important;
+	font-size: 3em;
 }
 
 

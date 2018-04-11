@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="<?php echo SITEURL;?>css/good-vision.css">
 	<link rel="stylesheet" href="<?php echo SITEURL;?>css/news.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-	
+
 	<!--[if lt IE 9]>
 	<script src="<?php echo SITEURL;?>js/html5shiv.js"></script>
 	<![endif]-->
@@ -37,7 +37,7 @@
             <section class="breadcrumbs">
                 <div class="breadcrumbs-text"></div>
             </section>
-			
+
 			<main role="main" class="content">
 
 				<div class="news-wrapper-main-page">
@@ -50,7 +50,7 @@
                 <div class="main-page-button"><a href="news.html">Читать все новости</a></div>
 
 			</main>
-			
+
 		</div>
 
 
@@ -60,7 +60,9 @@
 
 		<?php include_once  __DIR__.'/main/footer.php'; ?>
 
-        <div id="back-top"><a href="#top"><div class="back-top-arrow"></div><span></span>Вверх</a></div>
+        <?php include_once  SITEROOTDIR.'views/main/back_top.php'; ?>
+
+
 
 	</div>
 
