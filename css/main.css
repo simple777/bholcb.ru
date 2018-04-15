@@ -564,11 +564,6 @@ nav a
 	height: 50px;
 }
 
-.but-vk a:hover
-{
-	background: url('../images/navigation/ico-vk-h.png') no-repeat center center;
-}
-
 
 
 /* Main */
@@ -1312,4 +1307,6 @@ nav a
     display: inline;
     background-image: url('../images/navigation/ico-good-vision_black.png');
     background-image: url('../images/navigation/ico-good-vision_blue.png');
+    background-image: url('../images/navigation/ico-vk_black.png');
+    background-image: url('../images/navigation/ico-vk_blue.png');
 }
