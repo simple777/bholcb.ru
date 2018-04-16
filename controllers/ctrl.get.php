@@ -32,22 +32,19 @@ if (isset($_GET['route']))
                         //vars
                         //*********************************************************************************************/
 
-
-                        $newsLimit = 100;
-                        $news_onPage = 6;
-                        $page = 1;
+                        //$page = 1;
 
 
                         //*********************************************************************************************/
 
                         //get data from database by last month
 
-                        $news = news_Get_ByDate_vsImg($mysqli, $newsLimit, date('Y'), date('m'));
+                        $news = news_Get_ByDate_vsImg($mysqli, NEWS_LIMIT_ALL, date('Y'), date('m'));
 
                         //makeing array  - save data in array
 
                         $news_Count = count($news);
-                        $news_Array = news_GetArray ($news, $news_Count, $news_onPage);
+                        $news_Array = news_GetArray ($news, $news_Count, NEWS_ONPAGE);
 
 
                         //*********************************************************************************************/
@@ -57,11 +54,10 @@ if (isset($_GET['route']))
 
                         session_start();
 
+                        $_SESSION['page'] = 1;
                         $_SESSION['news_Count'] = $news_Count;
                         $_SESSION['news_Array'] = $news_Array;
-                        $_SESSION['newsLimit'] = $newsLimit;
-                        $_SESSION['news_onPage'] = $news_onPage;
-                        $_SESSION['page'] = $page;
+
 
 
                         //views

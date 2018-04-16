@@ -119,5 +119,3 @@ function img_resize($filename, $max_width, $max_height, $quality)
         //return $image_p;
         return imagejpeg($image_p, $filename, $quality);//Сохраняет JPEG/PNG/GIF изображение
 }
-
-

@@ -6,7 +6,7 @@
 	<meta name="keywords" content="белохолуницкая, библиотека, официальный сайт, библиотека, белая холуница">
 	<title>МБУК Белохолуницкая центральная библиотека официальный сайт</title>
     <?php include_once  SITEROOTDIR.'views/main/head_libs.php'; ?>
-    <link rel="stylesheet" href="<?php echo SITEURL;?>css/news.css">
+    <link rel="stylesheet" href="<?php echo SITEURL;?>css/news.css?v10">
     <?php include_once  SITEROOTDIR.'views/main/head_font.php'; ?>
     <?php include_once  SITEROOTDIR.'views/main/head_add_libs.php'; ?>
 </head>

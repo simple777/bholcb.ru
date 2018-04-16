@@ -63,7 +63,15 @@
 
                 <section class="news">
 
-                    <?php if ($news_Array) { include_once __DIR__.'/news_all_inc.php'; } else { echo "<div class='news-item-empty'>Извините, новостей в этом месяце не было!</div>"; }?>
+                    <?php
+
+                        require_once SITEROOTDIR.'functions/news.php';
+
+                        news_Filter(date('Y'), date('m'));
+
+                        if ($news_Array) { include_once __DIR__.'/news_all_inc.php'; } else { echo "<div class='news-item-empty'>Извините, новостей в этом месяце не было!</div>"; }
+
+                    ?>
 
                 </section>
 

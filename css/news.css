@@ -596,15 +596,39 @@
 
 /* Content: verse */
 
-.verse {
+.verse
+{
 	display: table;
 	margin: 40px auto;
 	white-space: pre-line;
 	word-wrap: break-word;
-	padding: 1em;
+	padding: 4em;
 	border: 1px solid #E7D5C0;
 	background: #FFF9E7;
-	/*background: #f6f3ea;*/
+	/* background: #f6f3ea; */
+}
+
+.verse p
+{
+	line-height: 2em;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+.verse-header
+{
+	font-weight: bold;
+	text-align: center;
+	padding-top: 1em;
+	text-transform: uppercase;
+	font-size: 1.3em;
+}
+
+.verse-author
+{
+	font-size: .9em;
+	font-weight: bold;
+	float: right;
 }
 
 blockquote

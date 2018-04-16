@@ -42,19 +42,13 @@
                             <span style="background: #e0825b; color: #fff; text-shadow: none; font-size: 1.5em;">11 апреля в 10 часов</span><br>
                             центральная и детская библиотеки приглашают вас
                             на встречу с Кировскими писателями:<br>
-                            &#9998;&nbsp; <span class="border-dashed">Кузницына(Козвонина) Наталья Владимировна<br></span>
                             &#9998;&nbsp; <span class="border-dashed">Изместьев Евгений Александрович<br></span>
-                            &#9998;&nbsp; <span class="border-dashed">Морозов Владимир Игоревич<br></span>
                             &#9998;&nbsp; <span class="border-dashed">Носков Борис Николаевич<br></span>
-                            &#9998;&nbsp; <span class="border-dashed">Туляков Валерий Павлович<br></span>
                          </p>
 
 
                         <div class="afisha-authors-list-wrapper">
                             <div class="afisha-authors-list">
-                                <div class="afisha-authors-list-item"><img src="<?php echo SITEURL;?>media/afisha/oblastnye-dni-vjatskoj-knigi/1.jpg"></div>
-                                <div class="afisha-authors-list-item"><img src="<?php echo SITEURL;?>media/afisha/oblastnye-dni-vjatskoj-knigi/2.jpg"></div>
-                                <div class="afisha-authors-list-item"><img src="<?php echo SITEURL;?>media/afisha/oblastnye-dni-vjatskoj-knigi/3.jpg"></div>
                                 <div class="afisha-authors-list-item"><img src="<?php echo SITEURL;?>media/afisha/oblastnye-dni-vjatskoj-knigi/4.jpg"></div>
                                 <div class="afisha-authors-list-item"><img src="<?php echo SITEURL;?>media/afisha/oblastnye-dni-vjatskoj-knigi/5.jpg"></div>
                             </div>

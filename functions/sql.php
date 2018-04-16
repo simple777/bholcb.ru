@@ -1,4 +1,5 @@
 <?php
+
 function sql_Connect()
 {
     $DB_SERVER 	= 'localhost';

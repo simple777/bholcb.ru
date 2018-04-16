@@ -101,6 +101,7 @@ else
                         <option>Администратор</option>
                         <option>Администрация</option>
                         <option>Мякишева И. В., гл. библиотекарь центральной библиотеки</option>
+                        <option>Сорокожердьева Н. Е., зав. методическим отделом центральной библиотеки</option>
                     </select>
 
                     <select id="category" name="category">

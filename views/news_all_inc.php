@@ -82,7 +82,7 @@
 
 <?php endforeach; ?>
 
-<?php if ($_SESSION['news_Count'] > $_SESSION['page'] * $_SESSION['news_onPage']) : ?>
+<?php if ($_SESSION['news_Count'] > $_SESSION['page'] * NEWS_ONPAGE) : ?>
 
 
     <div class="news-show-more clearfix">
