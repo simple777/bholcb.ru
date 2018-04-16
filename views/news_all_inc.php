@@ -84,7 +84,6 @@
 
 <?php if ($_SESSION['news_Count'] > $_SESSION['page'] * NEWS_ONPAGE) : ?>
 
-
     <div class="news-show-more clearfix">
         <div class="news-show-more-but" id="news-show-more-but-id">Показать еще</div>
     </div>

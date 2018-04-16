@@ -4,30 +4,6 @@ require_once __DIR__.'/../../config.php';
 
 session_start();
 
-if (isset($_SESSION['dir_name_ru']))
-{
-    $dir_name = $_SESSION['dir_name_ru'];
-
-    if (isset($_SESSION['dir_path']))
-    {
-        $dir_path = $_SESSION['dir_path'];
-    }
-
-    else { $dir_path = ''; }
-
-
-    if (isset($_SESSION['dir_url']))
-    {
-        $dir_url = $_SESSION['dir_url'];
-    }
-
-    else { $dir_url = ''; }
-}
-
-else
-{
-    $dir_name = '';
-}
 
 ?>
 
@@ -80,37 +56,31 @@ else
 
             <div class="admin-content">
 
-                <form action="ajax/news_insert.php" method="POST" id="admin-insert-news" name="admin-insert-news" class="admin-form">
+                <form action="<?php echo SITEURL;?>admin/ajax/person_insert.php" method="POST" id="admin-insert-person" name="admin-insert-person" class="admin-form">
 
-                    <legend>Добавить новость</legend>
+                    <legend>Добавить человека</legend>
 
-                    <input type="text" id="title" name="title" placeholder="Заголовок" class="admin-input" value="<?php echo $dir_name; ?>" required>
-                    <input type="text" id="title-eng" name="title-eng" class="admin-input">
-                    <input type="text" id="path" name="path" class="admin-input" disabled value="<?php echo $dir_path; ?>">
-                    <input type="text" id="url" name="url" class="admin-input" disabled value="<?php echo $dir_url; ?>">
-                    <input type="date" name="publish_date" class="forclear" required>
+                    <input type="text" id="name" name="name" placeholder="ФИО" class="admin-input" value="" required>
 
-                    <input type="text" id="imgprev-medium" name="imgprev-medium" placeholder="Превью 400x400" class="admin-input forclear" required>
-                    <input type="text" id="imgprev-small" name="imgprev-small" placeholder="Превью 170x170" class="admin-input forclear" required>
+                    <input type="text" id="f_name" name="f_name" placeholder="Имя" class="admin-input" value="">
+                    <input type="text" id="s_name" name="s_name" placeholder="Отчество" class="admin-input" value="">
+                    <input type="text" id="t_name" name="t_name" placeholder="Фамилия" class="admin-input" value="">
 
-                    <textarea type="text" id="description" name="description" placeholder="Краткое описание" class="admin-input description forclear" required></textarea>
+                    <input type="text" id="name-eng" name="name-eng" placeholder="FIO" class="admin-input" value="" required>
+
+                    <input type="text" id="city" name="city" placeholder="Город" class="admin-input" value="" required>
+
+                    <input type="text" id="imgprev" name="imgprev" placeholder="Превью 400x400" class="admin-input forclear" required>
+
                     <textarea type="text" id="text" name="text" placeholder="Текст" class="admin-input forclear" required></textarea>
 
                     <input type="text" id="tags" name="tags" placeholder="Теги" class="admin-input forclear">
 
 
                     <select id="author" name="author">
-                        <option>Администратор</option>
-                        <option>Администрация</option>
-                        <option>Мякишева И. В., гл. библиотекарь центральной библиотеки</option>
-                        <option>Сорокожердьева Н. Е., зав. методическим отделом центральной библиотеки</option>
+                        <option>0</option>
+                        <option>1</option>
                     </select>
-
-                    <select id="category" name="category">
-                        <option>Новости</option>
-                    </select>
-
-                    <input type="text" id="img-count" name="img-count" placeholder="Кол-во картинок" class="admin-input forclear">
 
                     <br>
 
@@ -141,8 +111,8 @@ else
 <script src="<?php echo SITEURL;?>admin/js/larger.js"></script>
 <script>
     $(function(){
-        $('#admin-insert-news #title').liTranslit({
-            elAlias: $('#admin-insert-news #title-eng')
+        $('#admin-insert-person #name').liTranslit({
+            elAlias: $('#admin-insert-person #name-eng')
         });
     });
 </script>
