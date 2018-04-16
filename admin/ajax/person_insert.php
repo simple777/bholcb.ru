@@ -24,6 +24,7 @@ $mysqli = sql_Connect();
        $_POST['author'],
        $_POST['city'],
        $_POST['imgprev'],
+       $_POST['name_eng'],
        $_POST['tags']);
 
    if ($res) { echo 'Success!'; } else { echo 'Error inserting person!'; }

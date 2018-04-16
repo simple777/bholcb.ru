@@ -10,8 +10,24 @@ require_once __DIR__.'/../../functions/file.php';
 
         //make path to the folder
 
-        $base = SITEROOTDIR."media/news/";
-        $base_url = SITEURL."media/news/";
+        switch ($_POST['category'])
+        {
+            case 'news':
+                {
+                    $base = SITEROOTDIR."media/news/";
+                    $base_url = SITEURL."media/news/";
+                    break;
+                }
+
+             case 'person':
+                {
+                    $base = SITEROOTDIR."media/person/";
+                    $base_url = SITEURL."media/person/";
+                    break;
+                }
+        }
+
+
 
         //check that folder not exist
 

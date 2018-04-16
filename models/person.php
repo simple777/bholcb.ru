@@ -22,10 +22,10 @@ function news_Get_ByDate ($mysqli, $limit, $year, $month)
 
 
 //insert single person in database
-function person_Insert ($mysqli, $f_name, $s_name, $t_name, $text, $author, $city, $imgprev, $tags)
+function person_Insert ($mysqli, $f_name, $s_name, $t_name, $text, $author, $city, $imgprev, $name_eng, $tags)
 {
-    $stmt = $mysqli->prepare("INSERT INTO lib777_person (f_name, s_name, t_name, text, author, city, imgprev, tags) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
-    $stmt->bind_param("ssssssss", $f_name, $s_name, $t_name, $text, $author, $city, $imgprev, $tags);
+    $stmt = $mysqli->prepare("INSERT INTO lib777_person (f_name, s_name, t_name, text, author, city, imgprev, link, tags) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
+    $stmt->bind_param("sssssssss", $f_name, $s_name, $t_name, $text, $author, $city, $imgprev, $name_eng, $tags);
 
 // set parameters and execute
 

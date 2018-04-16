@@ -74,15 +74,34 @@ $(document).ready(function(){
 
     $('#but-make-dir').on('click', function() {
 
+        var category = $('#category').text();
 
-        var dir_name = $("#title-eng").val()+'/';
-        var dir_name_ru = $("#title").val();
+
+        switch (category)
+        {
+            case 'news':
+                {
+                    var dir_name = $("#title-eng").val()+'/';
+                    var dir_name_ru = $("#title").val();
+                    break;
+                }
+
+            case 'person':
+                {
+                    var dir_name = $("#name_eng").val()+'/';
+                    var dir_name_ru = $("#name").val();
+                    alert('Person 1');
+                    break;
+                }
+        }
+
+
 
         $.ajax({
             type: "POST",
             async: true,
-            url: "ajax/dir_make.php",
-            data: "dir_name="+dir_name+"&dir_name_ru="+dir_name_ru,
+            url: "../ajax/dir_make.php",
+            data: "dir_name="+dir_name+"&dir_name_ru="+dir_name_ru+'&category='+category,
             success: function(html) {
 
                 if (html)
@@ -134,7 +153,7 @@ $(document).ready(function(){
                     $.ajax({
                         type: "POST",
                         async: true,
-                        url: "ajax/img_prepare.php",
+                        url: "../ajax/img_prepare.php",
                         data: "dir_path="+dir_path+"&dir_url="+dir_url,
 
                         success: function(res) {

@@ -4,6 +4,31 @@ require_once __DIR__.'/../../config.php';
 
 session_start();
 
+if (isset($_SESSION['dir_name_ru']))
+{
+    $dir_name = $_SESSION['dir_name_ru'];
+
+    if (isset($_SESSION['dir_path']))
+    {
+        $dir_path = $_SESSION['dir_path'];
+    }
+
+    else { $dir_path = ''; }
+
+
+    if (isset($_SESSION['dir_url']))
+    {
+        $dir_url = $_SESSION['dir_url'];
+    }
+
+    else { $dir_url = ''; }
+}
+
+else
+{
+    $dir_name = '';
+}
+
 
 ?>
 
@@ -27,6 +52,8 @@ session_start();
 </head>
 
 <body>
+
+<div id="category" class="hidden">person</div>
 
 <div class="admin-page-wrapper">
 
@@ -60,13 +87,16 @@ session_start();
 
                     <legend>Добавить человека</legend>
 
-                    <input type="text" id="name" name="name" placeholder="ФИО" class="admin-input" value="" required>
+                    <input type="text" id="name" name="name" placeholder="ФИО" class="admin-input" value="<?php echo $dir_name; ?>" required>
 
                     <input type="text" id="f_name" name="f_name" placeholder="Имя" class="admin-input" value="">
                     <input type="text" id="s_name" name="s_name" placeholder="Отчество" class="admin-input" value="">
                     <input type="text" id="t_name" name="t_name" placeholder="Фамилия" class="admin-input" value="">
 
-                    <input type="text" id="name-eng" name="name-eng" placeholder="FIO" class="admin-input" value="" required>
+                    <input type="text" id="name_eng" name="name_eng" placeholder="FIO" class="admin-input" value="" required>
+
+                    <input type="text" id="path" name="path" class="admin-input" disabled value="<?php echo $dir_path; ?>">
+                    <input type="text" id="url" name="url" class="admin-input" disabled value="<?php echo $dir_url; ?>">
 
                     <input type="text" id="city" name="city" placeholder="Город" class="admin-input" value="" required>
 
@@ -112,7 +142,7 @@ session_start();
 <script>
     $(function(){
         $('#admin-insert-person #name').liTranslit({
-            elAlias: $('#admin-insert-person #name-eng')
+            elAlias: $('#admin-insert-person #name_eng')
         });
     });
 </script>

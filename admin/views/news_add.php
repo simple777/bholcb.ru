@@ -52,6 +52,8 @@ else
 
 <body>
 
+<div id="category" class="hidden">news</div>
+
 <div class="admin-page-wrapper">
 
     <div class="admin-header clearfix"><p>Панель управления</p></div>
