@@ -90,7 +90,6 @@ $(document).ready(function(){
                 {
                     var dir_name = $("#name_eng").val()+'/';
                     var dir_name_ru = $("#name").val();
-                    alert('Person 1');
                     break;
                 }
         }
