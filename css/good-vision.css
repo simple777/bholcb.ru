@@ -242,6 +242,11 @@ body .good-vision-menu
     background: url('../images/navigation/ico-vk.png') no-repeat center center !important;
 }
 
+.good-vision-style .e-cat
+{
+    background: url('../images/navigation/ico-ecat.png') no-repeat center center !important;
+}
+
 
 
 /* Common colors for all [good vision] themes */
@@ -346,6 +351,11 @@ body .good-vision-menu
 .gv-th-blackwhite .but-vk
 {
     background: url('../images/navigation/ico-vk_black.png') no-repeat center center !important;
+}
+
+.gv-th-blackwhite .e-cat
+{
+    background: url('../images/navigation/ico-ecat_black.png') no-repeat center center !important;
 }
 
 /* White and Black theme colors */
@@ -462,4 +472,9 @@ body .good-vision-menu
 .gv-th-blue .but-vk
 {
     background: url('../images/navigation/ico-vk_blue.png') no-repeat center center !important;
+}
+
+.gv-th-blue .e-cat
+{
+    background: url('../images/navigation/ico-ecat_blue.png') no-repeat center center !important;
 }

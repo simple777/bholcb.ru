@@ -43,7 +43,8 @@
 
     <section class="nav-side-menu">
         <div class="good-vision"></div>
-        <div class="but-vk"><a href="https://vk.com/id359922818" target="_blank"></a></div>
+        <div class="but-vk"><a href="https://vk.com/id359922818" title="Мы Вконтакте" target="_blank"></a></div>
+        <div class="e-cat"><a href="http://opac.herzenlib.ru/cgiopac/opacg/opac.exe?arg0=sbelh&arg1=12345&TypeAccess=PayAccess" title="Электронный каталог" target="_blank"></a></div>
         <div class="site-search"></div>
         <div class="but-mail"></div>
         <div class="but-youtube"></div>
