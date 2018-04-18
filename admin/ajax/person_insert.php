@@ -2,7 +2,7 @@
 
 require_once __DIR__.'/../../config.php';
 
-require_once SITEROOTDIR.'models/person.php';
+require_once SITEROOTDIR.'models/person_single.php';
 require_once SITEROOTDIR.'functions/sql.php';
 
 

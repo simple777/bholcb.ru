@@ -384,8 +384,8 @@ if (isset($_GET['route']))
                             break;
                         }
 
-                        case 'oblastnye-dni-vjatskoj-knigi.html': {
-                            include_once SITEROOTDIR.'views/afisha/oblastnye-dni-vjatskoj-knigi.php';
+                        case 'biblionoch-2018.html': {
+                            include_once SITEROOTDIR.'views/afisha/biblionoch-2018.php';
                             break;
                         }
                     }
@@ -459,6 +459,73 @@ if (isset($_GET['route']))
             case 'publish':
             {
                 include_once __DIR__ . '/../views/publish.php';
+                break;
+            }
+
+
+            /* Route = 'person' */
+            /**********************************************************************************************************/
+
+            case 'person':
+            {
+                if (isset($_GET['item']))
+                {
+                    switch ($_GET['item'])
+                    {
+
+                        case 'all': {
+                            //include_once SITEROOTDIR.'views/person/person_single.php';
+                            break;
+                        }
+
+                        default:
+                            {
+
+                                //Get single person data <- by click on main page
+
+                                //checking URL, if not valid - redirect to main page
+                                if (!preg_match("/^[-a-z0-9]+\.html$/", $_GET['item']))
+
+                                {
+                                    header('location: /');
+                                    exit;
+
+                                }
+
+
+                                //else get single person data
+
+                                require_once SITEROOTDIR.'models/person.php';
+                                require_once SITEROOTDIR.'functions/sql.php';
+
+                                //connect to database
+                                $mysqli = sql_Connect();
+
+                                //delete from link '.html'
+                                $person_link_str = substr($_GET['item'],0,-5);
+
+                                //model - get data for single news
+                                $person_current = person_Get_SingleByName($mysqli, $person_link_str);
+
+                                //if received single news data - include view of single news
+
+                                if (!empty($person_current))
+                                {
+                                    include_once SITEROOTDIR.'views/person/person_single.php';
+                                }
+
+                                exit;
+                            }
+                    }
+
+                }
+                else
+                {
+                    header('location: /');
+                    exit;
+
+                }
+
                 break;
             }
 

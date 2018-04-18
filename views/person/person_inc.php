@@ -1,37 +1,28 @@
-<?php //session is open ?>
-<?php //get page number from session, cause we can change it by ajax ?>
-<?php //get all vars from session, views\news_all_inc.php cant see them otherwise - when working by ajax(news_showmore.php) ?>
 
-<?php $cycle_count = 0;?>
+<?php foreach ($person_current as $item): ?>
 
-<div class="news-row-main-page clearfix">
+    <?php $full_name = $item['f_name'].' '.$item['s_name'].' '.$item['t_name']; ?>
 
-<?php foreach ($news as $item): ?>
+        <article class="person-item-wrapper">
 
-        <article class="news-item-wrapper-main-page">
+            <header class="person-item-header">
+                <div class="person-item-title"><h2><?php echo $full_name; ?></h2></div>
+            </header>
 
-            <div class="news-item-content-main-page">
+            <div class="person-item-content">
 
-                <div class="news-item-hover-block-main-page"><a href="<?php echo 'news/'.$item['link'].'.html'; ?>" class="news-item-hover-link-main-page"></a></div>
+                <div class="person-item-content-img">
+                    <img src="<?php echo $item['imgprev']; ?>" width="400" height="300" class="lazy person-item-imgprev" alt="<?php echo $full_name; ?>">
+                </div>
 
-                <header>
-                    <h3 class="news-item-header-main-page"><?php echo $item['title']; ?></h3>
-                </header>
-                <p class="news-item-text-main-page"><?php echo $item['description']; ?></p>
-                <span class="news-item-images-count">
-                    <img src="<?php echo SITEURL?>images/main/images-count.png">
-                    <span><?php echo $item['images_count']; ?></span>
-                </span>
+                <div class="person-item-content-data">
 
-            </div>
+                    <?php echo $item['text'];?>
 
-            <div class="news-item-side-info-main-page">
-                <img class="news-item-imgprev-main-page" src="<?php echo $item['imgprev_small']; ?>" width="170" height="170" alt="<?php echo $item['title']; ?>">
-                <div class="news-item-date-main-page"><?php echo date('d.m.Y', strtotime($item['news_date'])); ?></div>
+                </div>
+
             </div>
 
         </article>
 
 <?php endforeach; ?>
-
-</div>

@@ -13,5 +13,6 @@ RewriteRule ^reading/recommendation/([a-zA-Z0-9_-]+.html)$ index.php?route=readi
 RewriteRule ^projects.html$ index.php?route=projects [L]
 RewriteRule ^print.html$ index.php?route=print [L]
 RewriteRule ^publish.html$ index.php?route=publish [L]
+RewriteRule ^person/([a-zA-Z0-9_-]+.html)$ index.php?route=person&item=$1 [L]
 #Must be disable on local server
 #RewriteRule ^news_add.php$ / [QSA,R]

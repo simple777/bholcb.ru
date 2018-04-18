@@ -82,7 +82,7 @@ else
 
             <div class="admin-content">
 
-                <form action="ajax/news_insert.php" method="POST" id="admin-insert-news" name="admin-insert-news" class="admin-form">
+                <form action="<?php echo SITEURL;?>admin/ajax/news_insert.php" method="POST" id="admin-insert-news" name="admin-insert-news" class="admin-form">
 
                     <legend>Добавить новость</legend>
 

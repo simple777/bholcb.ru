@@ -6,7 +6,7 @@
     <meta name="keywords" content="белохолуницкая, библиотека, официальный сайт, библиотека, белая холуница">
     <title>МБУК Белохолуницкая центральная библиотека официальный сайт - Издания</title>
     <?php include_once  SITEROOTDIR.'views/main/head_libs.php'; ?>
-    <link rel="stylesheet" href="<? echo SITEURL; ?>css/news.css?v10">
+    <link rel="stylesheet" href="<? echo SITEURL; ?>css/person.css?v10">
     <link rel="stylesheet" href="<? echo SITEURL; ?>css/simplelightbox.min.css">
     <?php include_once  SITEROOTDIR.'views/main/head_font.php'; ?>
     <?php include_once  SITEROOTDIR.'views/main/head_add_libs.php'; ?>
@@ -18,9 +18,9 @@
 
 	<div class="page-wrapper">
 
-        <?php include_once  __DIR__.'/main/header.php'; ?>
+        <?php include_once  SITEROOTDIR.'views/main/header.php'; ?>
 
-        <?php include_once  __DIR__.'/main/nav.php'; ?>
+        <?php include_once  SITEROOTDIR.'views/main/nav.php'; ?>
 		
 		<div class="content-wrapper clearfix">
 
@@ -34,11 +34,11 @@
 			
 			<main role="main" class="content-news-single">
 
-				<div class="news-single-wrapper">
+				<div class="person-wrapper">
 
-                    <section class="news-single-content-wrapper">
+                    <section class="person-content-wrapper">
 
-                        <?php include_once __DIR__.'/person_inc.php'; ?>
+                        <?php include_once SITEROOTDIR.'views/person/person_inc.php'; ?>
 
                     </section>
 
@@ -49,7 +49,7 @@
 		</div>
 
 
-        <?php include_once  __DIR__.'/main/footer.php'; ?>
+        <?php include_once  SITEROOTDIR.'views/main/footer.php'; ?>
 
         <?php include_once  SITEROOTDIR.'views/main/back_top.php'; ?>
 

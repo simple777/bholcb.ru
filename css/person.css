@@ -1,0 +1,168 @@
+/* Person */
+/**********************************************************************************************************************/
+
+
+.person-wrapper
+{
+	width: 50%;
+	margin: 1.5em auto;
+}
+
+.person-wrapper::before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: .1;
+	z-index: -1;
+
+	background: url(../images/pages/news-bg.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+}
+
+.person-item-wrapper
+{
+	position: relative;
+	width: 100%;
+}
+
+.person-item-header
+{
+	display: table;
+
+	text-transform: uppercase;
+	color: #000;
+
+	position: relative;
+	width: 100%;
+	min-height: 30px;
+
+	margin-bottom: 6%;
+	padding: 0;
+
+	border-top: 1px dashed #cac5bf;
+	border-bottom: 1px dashed #cac5bf;
+}
+
+.person-item-title
+{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.person-item-content
+{
+	position: relative; /* for hover link */
+	width: 100%;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.person-item-content-img
+{
+	text-align: center;
+}
+
+.person-item-imgprev
+{
+	margin-bottom: 0 !important;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.person-item-content-data
+{
+	padding: 2em;
+	text-align: justify;
+}
+
+.person-item-content-data p
+{
+	color: #222;
+	line-height: 150%;
+	font-size: 1.3em;
+}
+
+
+
+/* Media queries */
+/**********************************************************************************************************************/
+
+@media screen and (max-width: 1583px)
+{
+	.news-item-images-count
+	{
+		top: 83%;
+		left: 79%;
+	}
+}
+
+	@media screen and (max-width: 1192px)
+{
+
+	/* Single news */
+
+	.news-item-text
+	{
+		font-size: 1.1em;
+	}
+
+	.news-item-images-count
+	{
+		top: 85%;
+		left: 75%;
+	}
+
+}
+
+
+/* Large Devices, Wide Screens */
+@media screen and (max-width: 1280px)
+{
+	/* Single news */
+
+	.news-item-text
+	{
+		font-size: 1.1em;
+	}
+
+	.news-item-images-count
+	{
+		top: 83%;
+		left: 79%;
+	}
+
+	.news-item-images-count img
+	{
+		width: 15px;
+		height: 15px;
+
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+}
+
+
+/*Preloading images*/
+/**********************************************************************************************************************/
+
+.img_preload
+{
+
+}

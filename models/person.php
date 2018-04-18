@@ -21,6 +21,19 @@ function news_Get_ByDate ($mysqli, $limit, $year, $month)
 
 
 
+//get single news data by news-name
+function person_Get_SingleByName ($mysqli, $person_link_str)
+{
+    $query = "
+      SELECT `id`, `f_name`, `s_name`, `t_name`, `text`, `city`, `imgprev`, `link`
+      FROM `lib777_person` 
+      WHERE `link` = '".mysqli_real_escape_string($mysqli, $person_link_str)."'";
+
+    return $ret = sql_Query_assoc($mysqli, $query);
+}
+
+
+
 //insert single person in database
 function person_Insert ($mysqli, $f_name, $s_name, $t_name, $text, $author, $city, $imgprev, $name_eng, $tags)
 {

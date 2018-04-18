@@ -113,26 +113,19 @@ function news_Get_Images ($mysqli, $news_id)
 
 
 //insert single news in database
-function news_Insert ($mysqli, $p_title, $p_imgprev_small, $p_imgprev_medium, $p_publish_date, $p_author, $p_description, $p_text, $p_link, $p_category, $p_tags, $p_images_count)
+function news_Insert ($mysqli, $title, $imgprev_small, $imgprev_medium, $news_date, $author, $description, $text, $link, $category, $tags, $images_count)
 {
+    if (!$news_date)
+    {
+        $news_date = date("Y-m-d H:i:s");
+    }
+        else
+            {
+                $news_date = date("Y-m-d H:i:s", strtotime($news_date));
+            }
+
     $stmt = $mysqli->prepare("INSERT INTO lib777_news (title, imgprev_small, imgprev_medium, news_date, author, description, text, link, category, tags, images_count) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
     $stmt->bind_param("sssssssssss", $title, $imgprev_small, $imgprev_medium, $news_date, $author, $description, $text, $link, $category, $tags, $images_count);
-
-// set parameters and execute
-
-    if (!$p_publish_date) { $p_publish_date = date("Y-m-d H:i:s"); }
-
-    $title = $p_title;
-    $imgprev_small = $p_imgprev_small;
-    $imgprev_medium = $p_imgprev_medium;
-    $news_date = date("Y-m-d H:i:s", strtotime($p_publish_date));
-    $author = $p_author;
-    $description = $p_description;
-    $text = $p_text;
-    $link = $p_link;
-    $category = $p_category;
-    $tags = $p_tags;
-    $images_count = $p_images_count;
 
     $stmt->execute();
 

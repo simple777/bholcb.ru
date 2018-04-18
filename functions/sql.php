@@ -4,7 +4,7 @@ function sql_Connect()
 {
     $DB_SERVER 	= 'localhost';
     $DB_USER 	= 'root';
-    $DB_PASS 	= 'root';
+    $DB_PASS 	= '';
     $DB_NAME 	= 'libbh';
 
     //Create connection

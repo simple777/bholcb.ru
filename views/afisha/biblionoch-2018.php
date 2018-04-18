@@ -37,21 +37,8 @@
                     <div class="p-big-text">
                         <h2>Уважаемые пользователи!</h2>
 
-                        <p>В рамках акции
-                            <span class="border-dashed">Областные дни Вятской книги</span><br>
-                            <span style="background: #e0825b; color: #fff; text-shadow: none; font-size: 1.5em;">11 апреля в 10 часов</span><br>
-                            центральная и детская библиотеки приглашают вас
-                            на встречу с Кировскими писателями:<br>
-                            &#9998;&nbsp; <span class="border-dashed">Изместьев Евгений Александрович<br></span>
-                            &#9998;&nbsp; <span class="border-dashed">Носков Борис Николаевич<br></span>
-                         </p>
-
-
-                        <div class="afisha-authors-list-wrapper">
-                            <div class="afisha-authors-list">
-                                <div class="afisha-authors-list-item"><img src="<?php echo SITEURL;?>media/afisha/oblastnye-dni-vjatskoj-knigi/4.jpg"></div>
-                                <div class="afisha-authors-list-item"><img src="<?php echo SITEURL;?>media/afisha/oblastnye-dni-vjatskoj-knigi/5.jpg"></div>
-                            </div>
+                        <div class="news-single-content-wrapper-landscape">
+                            <img src="<?php echo SITEURL;?>media/afisha/biblionoch-2018/biblionoch1.png" class="lazy news-single-content-one-in-row" alt="Библионочь 2018 МБУК БЦБ">
                         </div>
 
                     </div>
