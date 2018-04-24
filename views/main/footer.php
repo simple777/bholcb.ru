@@ -49,6 +49,6 @@
                         <p>г. Белая Холуница, ул. Здравоохранения 1</p>
                     </section>
                 </div>
-                <div class="footer-copyright"><div class="footer-text">2018 г. МБУК Белохолуницкая ЦРБ</div>&nbsp;&nbsp;<?php //include_once  SITEROOTDIR.'views/main/counter.php'; ?></div>
+                <div class="footer-copyright"><div class="footer-text">2018 г. МБУК Белохолуницкая ЦБ</div>&nbsp;&nbsp;<?php //include_once  SITEROOTDIR.'views/main/counter.php'; ?></div>
             </div>
         </footer>
