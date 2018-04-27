@@ -384,8 +384,8 @@ if (isset($_GET['route']))
                             break;
                         }
 
-                        case 'biblionoch-2018.html': {
-                            include_once SITEROOTDIR.'views/afisha/biblionoch-2018.php';
+                        case 'rezhim-raboty-v-prazdniki.html': {
+                            include_once SITEROOTDIR.'views/afisha/rezhim-raboty-v-prazdniki.php';
                             break;
                         }
                     }
