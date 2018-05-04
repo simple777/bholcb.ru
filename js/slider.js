@@ -24,7 +24,7 @@ $(document).ready(function(){
                 return this.each(function(){
                     var config = {
                         slideDur: 5000,
-                        fadeDur: 800
+                        fadeDur: 500
                     };
                     if(settings){
                         $.extend(config, settings);
@@ -209,7 +209,7 @@ $(document).ready(function(){
 
         $('#Fader').easyFader({
             slideDur: 7000,
-            fadeDur: 800
+            fadeDur: 230
         });
 
 

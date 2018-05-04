@@ -99,7 +99,7 @@ $(document).ready(function(){
         $.ajax({
             type: "POST",
             async: true,
-            url: "../ajax/dir_make.php",
+            url: "../admin/ajax/dir_make.php",
             data: "dir_name="+dir_name+"&dir_name_ru="+dir_name_ru+'&category='+category,
             success: function(html) {
 
@@ -152,7 +152,7 @@ $(document).ready(function(){
                     $.ajax({
                         type: "POST",
                         async: true,
-                        url: "../ajax/img_prepare.php",
+                        url: "../admin/ajax/img_prepare.php",
                         data: "dir_path="+dir_path+"&dir_url="+dir_url,
 
                         success: function(res) {

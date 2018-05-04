@@ -682,6 +682,62 @@ blockquote cite
 	font-weight: 700;
 }
 
+
+
+/* Custom styles for news */
+
+.japan
+{
+	width: 100%;
+	display: table;
+}
+
+.japan > div
+{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.japan > div:hover
+{
+	color: red;
+}
+
+.japan > div img
+{
+	border: 1px solid black;
+}
+
+.japan-header
+{
+	font-size: 1em;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 1em 0;
+}
+
+.japan-wrapper
+{
+	width: 100%;
+	text-align: center;
+}
+
+.japan-link
+{
+	font-size: 1.2em;
+}
+
+.japan-link:hover
+{
+	color: red;
+}
+
+.japan-link-title
+{
+	font-size: .8em;
+}
+
 /* Media queries */
 /**********************************************************************************************************************/
 
