@@ -99,7 +99,7 @@ $(document).ready(function(){
         $.ajax({
             type: "POST",
             async: true,
-            url: "../admin/ajax/dir_make.php",
+            url: "../ajax/dir_make.php",
             data: "dir_name="+dir_name+"&dir_name_ru="+dir_name_ru+'&category='+category,
             success: function(html) {
 
@@ -152,7 +152,7 @@ $(document).ready(function(){
                     $.ajax({
                         type: "POST",
                         async: true,
-                        url: "../admin/ajax/img_prepare.php",
+                        url: "../ajax/img_prepare.php",
                         data: "dir_path="+dir_path+"&dir_url="+dir_url,
 
                         success: function(res) {
@@ -169,10 +169,6 @@ $(document).ready(function(){
                                 //get path from returned html
 
                                 var pathes_array = res.split('::');
-
-                                //images count for record in db
-
-                                $('#img-count').val(pathes_array[pathes_array.length-1]);
 
 
                                 //separate gallery and main&prev folders
@@ -206,6 +202,11 @@ $(document).ready(function(){
                                                 }
 
                                 });
+
+
+                                //images count for record in db
+
+                                $('#img-count').val(k);
 
                                 //genereta html for gallery
 

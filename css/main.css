@@ -2,10 +2,15 @@
 /**********************************************************************************************************************/
 
 /*width less then parent block*/
-img, iframe, video, embed 
+img, video, embed
 {
 	max-width: 100% !important;
 	height: auto;
+}
+
+iframe
+{
+	max-width: 100% !important;
 }
 
 /*clearfix*/

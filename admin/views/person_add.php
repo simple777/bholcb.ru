@@ -63,23 +63,13 @@ else
 
         <aside class="admin-menu-left">
 
-            <section>
-                <nav role="navigation" class="admin-menu-left-list">
-                    <a href="<?php echo SITEURL;?>admin/views/news_add.php">Новости</a>
-                    <a href="<?php echo SITEURL;?>admin/views/person_add.php">Люди</a>
-                    <a href="#">Новинки</a>
-                </nav>
-            </section>
+            <?php include_once  SITEROOTDIR.'admin/views/main/nav.php'; ?>
 
         </aside>
 
         <aside class="admin-content-wrapper-in">
 
-            <div class="admin-content-control-panel">
-                <div class="green" id="but-make-dir"></div>
-                <div class="green" id="images-prepare"></div>
-                <div class="green" id="but-clr-all"></div>
-            </div>
+            <?php include_once  SITEROOTDIR.'admin/views/main/controls.php'; ?>
 
             <div class="admin-content">
 

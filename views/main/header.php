@@ -55,15 +55,6 @@
                 <div class="slides fader" id="Fader">
 
                     <div class="slide">
-                        <div class="slide-image-wrapper "><a href="<?php echo SITEURL;?>afisha/rezhim-raboty-v-prazdniki.html" class="slide-href" target="_blank"><img src="<?php echo SITEURL;?>media/afisha/rezhim-raboty-v-prazdniki.jpg"></a></div>
-                        <div class="slide-text-wrapper">
-                            <h2 class="slide-header">Режим работы в праздники</h2>
-                            <p class="slide-description">28 апреля с 8:00 до 15:00 | 29 апреля, 2 мая, 6 мая с 10:00 до 16:00 | 30 апреля, 5 мая - выходной</p>
-                            <div class="slides-navigation"></div>
-                        </div>
-                    </div>
-
-                    <div class="slide">
                         <div class="slide-image-wrapper "><a href="<?php echo SITEURL;?>afisha/need-help.html" class="slide-href" target="_blank"><img src="<?php echo SITEURL;?>media/afisha/remont.jpg"></a></div>
                         <div class="slide-text-wrapper">
                             <h2 class="slide-header">Нужна ваша помощь</h2>

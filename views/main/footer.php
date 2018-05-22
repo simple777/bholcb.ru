@@ -47,6 +47,9 @@
                         <p class="footer-info-time">Понедельник - Пятница с 9:00 до 18:00</p>
                         <p class="footer-info-time">Воскресенье с 10:00 до 16:00</p>
                         <p>г. Белая Холуница, ул. Здравоохранения 1</p>
+
+                       <?php include_once SITEROOTDIR.'/views/main/gismeteo.php'; ?>
+
                     </section>
                 </div>
                 <div class="footer-copyright"><div class="footer-text">2018 г. МБУК Белохолуницкая ЦБ</div>&nbsp;&nbsp;<?php include_once  SITEROOTDIR.'views/main/counter.php'; ?></div>

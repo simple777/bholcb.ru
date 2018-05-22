@@ -124,6 +124,16 @@ function news_Insert ($mysqli, $title, $imgprev_small, $imgprev_medium, $news_da
                 $news_date = date("Y-m-d H:i:s", strtotime($news_date));
             }
 
+    if (strlen($description) > 147)
+    {
+        $description = mb_substr($description, 0, 147, 'UTF-8');
+        $description = $description.'...';
+    }
+        else
+            {
+                $description = $description.'...';
+            }
+
     $stmt = $mysqli->prepare("INSERT INTO lib777_news (title, imgprev_small, imgprev_medium, news_date, author, description, text, link, category, tags, images_count) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
     $stmt->bind_param("sssssssssss", $title, $imgprev_small, $imgprev_medium, $news_date, $author, $description, $text, $link, $category, $tags, $images_count);
 

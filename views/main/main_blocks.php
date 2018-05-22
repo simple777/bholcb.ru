@@ -109,7 +109,7 @@
             <img src="images/blocks/6.jpg">
         </div>
 
-        <a href="<?php echo SITEURL;?>" class="content-line-block-link"></a>
+        <a href="<?php echo SITEURL;?>books-of-month.html" class="content-line-block-link"></a>
 
     </div>
 

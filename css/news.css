@@ -682,6 +682,29 @@ blockquote cite
 	font-weight: 700;
 }
 
+.news-list
+{
+
+}
+
+.news-list li
+{
+	font-size: 1.3em;
+	padding: .4em;
+}
+
+
+
+/* Video */
+
+.news-video-wrapper
+{
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 3em 0 0 0;
+}
+
 
 
 /* Custom styles for news */
