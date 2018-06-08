@@ -55,6 +55,15 @@
                 <div class="slides fader" id="Fader">
 
                     <div class="slide">
+                        <div class="slide-image-wrapper "><a href="<?php echo SITEURL;?>afisha/12-june.html" class="slide-href" target="_blank"><img src="<?php echo SITEURL;?>media/afisha/12-june.jpg"></a></div>
+                        <div class="slide-text-wrapper">
+                            <h2 class="slide-header">День России</h2>
+                            <p class="slide-description">Библиотека работает 9 июня с 8:00 до 14:00, 10 июня с 10:00 до 16:00, 11 июня - выходной, 12 июня - праздничный день!</p>
+                            <div class="slides-navigation"></div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
                         <div class="slide-image-wrapper "><a href="<?php echo SITEURL;?>afisha/need-help.html" class="slide-href" target="_blank"><img src="<?php echo SITEURL;?>media/afisha/remont.jpg"></a></div>
                         <div class="slide-text-wrapper">
                             <h2 class="slide-header">Нужна ваша помощь</h2>

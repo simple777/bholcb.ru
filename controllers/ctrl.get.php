@@ -388,6 +388,11 @@ if (isset($_GET['route']))
                             include_once SITEROOTDIR.'views/afisha/rezhim-raboty-v-prazdniki.php';
                             break;
                         }
+
+                        case '12-june.html': {
+                            include_once SITEROOTDIR.'views/afisha/12-june.php';
+                            break;
+                        }
                     }
 
                 }
