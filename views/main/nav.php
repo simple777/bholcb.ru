@@ -35,7 +35,7 @@
                 <li><a href="<?php echo SITEURL; ?>about/history.html">История</a></li>
                 <li><a href="<?php echo SITEURL; ?>about/structure.html">Структура</a></li>
                 <li><a href="<?php echo SITEURL; ?>about/success.html">Успехи</a></li>
-                <li><a href="<?php echo SITEURL; ?>about/partners.html">Партнеры</a></li>
+                <!--<li><a href="<?php //echo SITEURL; ?>about/partners.html">Партнеры</a></li>-->
                 <!-- <li><a href="#">На страницах прессы</a></li> -->
             </ul>
         </li>

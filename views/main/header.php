@@ -54,6 +54,8 @@
 
                 <div class="slides fader" id="Fader">
 
+                    <!--
+
                     <div class="slide">
                         <div class="slide-image-wrapper "><a href="<?php echo SITEURL;?>afisha/12-june.html" class="slide-href" target="_blank"><img src="<?php echo SITEURL;?>media/afisha/12-june.jpg"></a></div>
                         <div class="slide-text-wrapper">
@@ -71,6 +73,8 @@
                             <div class="slides-navigation"></div>
                         </div>
                     </div>
+
+                    -->
 
                     <div class="slide">
                         <div class="slide-image-wrapper "><a href="<?php echo SITEURL;?>afisha/recommendations-for-children.html" class="slide-href" target="_blank"><img src="<?php echo SITEURL;?>media/afisha/recommendations-for-children.jpg"></a></div>

@@ -90,7 +90,7 @@
 
                         <div class="about-success-image-wrapper">
                             <img src="<?php echo SITEURL;?>images/pages/about/success/respect/3-chulkina-ln.jpg" class="minimized" alt="Чулкина Л.Н."><br>
-                            <span>Нечаева Е.И.</span>
+                            <span>Чулкина Л.Н.</span>
                         </div>
 
                         <div class="about-success-image-wrapper">
