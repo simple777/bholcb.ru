@@ -1,0 +1,8 @@
+<div id="e-cat">
+	<form name="reg" action="http://opac.herzenlib.ru/cgiopac/opacg/opac.exe" method="post" target="_blank">
+        <input type="hidden" name="arg0" size="5" value="sbelh"/>
+        <input type="hidden" name="arg1" size="5" value="12345"/>
+        <input type="hidden" name="TypeAccess" value="PayAccess">
+        <input type="button" name="input" value="Электронный каталог" onClick="reg.submit()" class="e-cat"/>
+	</form>
+</div>

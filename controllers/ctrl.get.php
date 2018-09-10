@@ -364,6 +364,62 @@ if (isset($_GET['route']))
                 break;
             }
 
+            /* Route = 'structure' */
+            /**********************************************************************************************************/
+
+            case 'structure':
+            {
+                if (isset($_GET['item']))
+                {
+                    switch ($_GET['item'])
+                    {
+
+                        case 'administration.html': {
+                            include_once SITEROOTDIR.'views/structure/administration.php';
+                            break;
+                        }
+
+                        case 'sector_dosug.html': {
+                            include_once SITEROOTDIR.'views/structure/sector_dosug.php';
+                            break;
+                        }
+
+                        case 'metodist.html': {
+                            include_once SITEROOTDIR.'views/structure/metodist.php';
+                            break;
+                        }
+
+                        case 'ci.html': {
+                            include_once SITEROOTDIR.'views/structure/ci.php';
+                            break;
+                        }
+
+                        case 'otdel_obslug.html': {
+                            include_once SITEROOTDIR.'views/structure/otdel_obslug.php';
+                            break;
+                        }
+
+                        case 'otdel_complect.html': {
+                            include_once SITEROOTDIR.'views/structure/otdel_complect.php';
+                            break;
+                        }
+
+                        case 'sector_kraeved.html': {
+                            include_once SITEROOTDIR.'views/structure/sector_kraeved.php';
+                            break;
+                        }
+                    }
+
+                }
+                else
+                {
+                    header('location: /');
+                    exit;
+
+                }
+
+                break;
+            }
 
             /* Route = 'about' */
             /**********************************************************************************************************/

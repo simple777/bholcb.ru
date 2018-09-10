@@ -1,3 +1,4 @@
 /!ungit/
 /.idea/
 /functions/sql.php
+*.sql

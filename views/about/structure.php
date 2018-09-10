@@ -38,13 +38,13 @@
 
                             <div class="circle-menu">
                                 <ul>
-                                    <li><a class="spiritual" href="#">Методический отдел</a></li>
-                                    <li><a class="occupational" href="#">Центр информации</a></li>
-                                    <li><a class="emotional" href="#">Отдел обслуживания</a></li>
-                                    <li><a class="environmental" href="#">Отдел комплектования</a></li>
-                                    <li><a class="intellectual" href="#">Администрация</a></li>
-                                    <li><a class="social" href="#">Сектор краеведения</a></li>
-                                    <li><a class="physical" href="#">Сектор досуга</a></li>
+                                    <li><a class="spiritual" href="structure/metodist.html">Методический отдел</a></li>
+                                    <li><a class="occupational" href="structure/ci.html">Центр информации</a></li>
+                                    <li><a class="emotional" href="structure/otdel_obslug.html">Отдел обслуживания</a></li>
+                                    <li><a class="environmental" href="structure/otdel_complect.html">Отдел комплектования</a></li>
+                                    <li><a class="intellectual" href="structure/administration.html">Администрация</a></li>
+                                    <li><a class="social" href="structure/sector_kraeved.html">Сектор краеведения</a></li>
+                                    <li><a class="physical" href="structure/sector_dosug.html">Сектор досуга</a></li>
                                 </ul>
                             </div>
 

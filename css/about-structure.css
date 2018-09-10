@@ -1,0 +1,338 @@
+/* About - Strucrure - Department */
+/**********************************************************************************************************************/
+
+.department-wrapper
+{
+    width: 50%;
+    margin: 1.5em auto;
+    padding: 2em 0;
+}
+
+.department-wrapper::before, .filial-wrapper::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .3;
+    z-index: -1;
+
+    background: url(../images/main/filials-bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.department
+{
+    width: 100%;
+    min-height: 610px;
+    position: relative;
+}
+
+/**********************************************************************************************************************/
+
+.department-workers-item
+{
+    display: table;
+    width: 65%;
+    padding-bottom: 3em;
+}
+
+.department-workers-item-main
+{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.department-workers-item-contacts
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.department-fio
+{
+    text-decoration: underline;
+}
+
+
+
+/**********************************************************************************************************************/
+
+
+
+.department-common-info-content
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.department-common-info-content-in
+{
+    position: relative;
+    z-index: 2;
+    display: table;
+    overflow: hidden;
+    width: 96%;
+    height: 100%;
+    padding: 0 2%;
+}
+
+.department-common-info-content-in-text
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: table-cell;
+   /* vertical-align: middle; */
+    text-align: center;
+
+    text-transform: uppercase;
+    color: #333;
+    font-size: 1.1em;
+}
+
+.department-common-info-content-in-text div
+{
+    margin: .5em auto;
+}
+
+.department-common-info-content-in-text h2
+{
+    font-size: 2em;
+    padding: 0.2em 0;
+    color: #333;
+    letter-spacing: .2em;
+    margin-bottom: 2em;
+    background: #feb52c;
+}
+
+.department-common-info-content-in-text img
+{
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+
+
+/**********************************************************************************************************************/
+
+
+
+.department-about
+{
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    font-size: 1.2em;
+}
+
+.department-about p
+{
+    font-size: 1.2em;
+    text-align: justify;
+    line-height: 1.4em;
+}
+
+.department-about-list
+{
+    font-size: 1.2em;
+    width: 75%;
+    margin: 0 auto 4em auto;
+}
+
+.department-about-list li
+{
+    margin-bottom: .5em;
+    line-height: 1.5em;
+    list-style-type: none;
+    padding: .4em;
+}
+
+.department-about-list li:before
+{
+    content: "\269C";
+}
+
+.department-prev
+{
+    margin-bottom: 2em;
+    outline: 5px solid white;
+}
+
+/**********************************************************************************************************************/
+
+.kraeved
+{
+    min-height: 1975px !important;
+}
+
+.dosug
+{
+    min-height: 1985px !important;
+}
+
+.metodist
+{
+    min-height: 1250px !important;
+}
+
+.ci
+{
+    min-height: 2100px !important;
+}
+
+.otdel_obslug
+{
+    min-height: 2700px !important;
+}
+
+.otdel_complect
+{
+    min-height: 2400px !important;
+}
+
+.kraeved .department-workers-item, .dosug .department-workers-item, .ci .department-workers-item, .otdel_obslug .department-workers-item, .otdel_complect .department-workers-item
+{
+    width: 50% !important;
+}
+
+
+/* Media queries */
+/**********************************************************************************************************************/
+
+
+/* Large Devices, Wide Screens */
+@media screen and (max-width: 1280px)
+{
+    .department
+    {
+        min-height: 570px;
+    }
+
+    .kraeved
+    {
+        min-height: 1800px !important;
+    }
+
+    .dosug
+    {
+        min-height: 1800px !important;
+    }
+
+    .metodist
+    {
+        min-height: 1200px !important;
+    }
+
+    .ci
+    {
+        min-height: 1850px !important;
+    }
+
+    .otdel_obslug
+    {
+        min-height: 2200px !important;
+    }
+
+    .otdel_complect
+    {
+        min-height: 2100px !important;
+    }
+
+    .department-common-info-content-in-text h2
+    {
+        font-size: 1.5em;
+        letter-spacing: .1em;
+    }
+
+}
+
+
+@media screen and (max-width: 1192px)
+{
+
+    .department
+    {
+        min-height: 520px;
+    }
+
+    .kraeved
+    {
+        min-height: 1750px !important;
+    }
+
+    .dosug
+    {
+        min-height: 1790px !important;
+    }
+
+    .metodist
+    {
+        min-height: 1290px !important;
+    }
+
+    .ci
+    {
+        min-height: 1750px !important;
+    }
+
+    .otdel_obslug
+    {
+        min-height: 2300px !important;
+    }
+
+    .otdel_complect
+    {
+        min-height: 2050px !important;
+    }
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+    .department
+    {
+        min-height: 480px;
+    }
+
+    .kraeved
+    {
+        min-height: 1720px !important;
+    }
+
+    .dosug
+    {
+        min-height: 1740px !important;
+    }
+
+    .metodist
+    {
+        min-height: 1320px !important;
+    }
+
+    .ci
+    {
+        min-height: 1700px !important;
+    }
+
+    .otdel_obslug
+    {
+        min-height: 2100px !important;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+}
