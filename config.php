@@ -9,4 +9,8 @@
     define("NEWS_LIMIT", 3);
     define("NEWS_ONPAGE", 6);
 
+    /* Concurs */
+
+    define("CONCURS_ONPAGE", 6);
+
 ?>

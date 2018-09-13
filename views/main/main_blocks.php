@@ -5,16 +5,16 @@
         <div class="content-line-block-content">
             <div class="content-line-block-content-in">
                 <div class="content-line-block-content-in-text">
-                    <h2 class="content-line-block-header">2017 год экологии</h2>
+                    <h2 class="content-line-block-header">Внимание! Конкурс!</h2>
                 </div>
             </div>
         </div>
 
         <div class="content-line-block-bg">
-            <img src="images/blocks/1.jpg">
+            <img src="images/blocks/1_2.jpg">
         </div>
 
-        <a href="<?php echo SITEURL;?>" class="content-line-block-link"></a>
+        <a href="<?php echo SITEURL;?>concurs.html" class="content-line-block-link"></a>
 
     </div>
 

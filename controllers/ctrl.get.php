@@ -44,7 +44,7 @@ if (isset($_GET['route']))
                         //makeing array  - save data in array
 
                         $news_Count = count($news);
-                        $news_Array = news_GetArray ($news, $news_Count, NEWS_ONPAGE);
+                        $news_Array = object_GetArray ($news, $news_Count, NEWS_ONPAGE);
 
 
                         //*********************************************************************************************/
@@ -108,6 +108,205 @@ if (isset($_GET['route']))
                 break;
 
             } // case 'news'
+
+
+            /* Route = 'Articles' */
+            /**********************************************************************************************************/
+            case 'article':
+
+            {
+                if (isset($_GET['item']))
+                {
+                    if ($_GET['item'] == 'all')
+                    {
+                        //Get all news for main page
+
+                        require_once SITEROOTDIR.'models/news.php';
+                        require_once SITEROOTDIR.'functions/array.php';
+                        require_once SITEROOTDIR.'functions/sql.php';
+
+
+                        //connect to database
+                        $mysqli = sql_Connect();
+
+                        //vars
+                        //*********************************************************************************************/
+
+                        //$page = 1;
+
+
+                        //*********************************************************************************************/
+
+                        //get data from database by last month
+
+                        $news = news_Get_ByDate_vsImg($mysqli, NEWS_LIMIT_ALL, date('Y'), date('m'));
+
+                        //makeing array  - save data in array
+
+                        $news_Count = count($news);
+                        $news_Array = object_GetArray ($news, $news_Count, NEWS_ONPAGE);
+
+
+                        //*********************************************************************************************/
+
+
+                        //save vars in session
+
+                        session_start();
+
+                        $_SESSION['page'] = 1;
+                        $_SESSION['news_Count'] = $news_Count;
+                        $_SESSION['news_Array'] = $news_Array;
+
+
+
+                        //views
+                        //*********************************************************************************************/
+
+                        include_once SITEROOTDIR.'views/news_all.php';
+
+
+                    }
+
+                    else
+                    {
+                        //Get single news data <- by click on main page
+
+                        //checking URL, if not valid - redirect to main page
+                        if (!preg_match("/^[-a-z0-9]+\.html$/", $_GET['item']))
+
+                        {
+                            header('location: /');
+                            exit;
+
+                        }
+
+
+                        //else get single news data
+
+                        require_once SITEROOTDIR.'models/news.php';
+                        require_once SITEROOTDIR.'functions/sql.php';
+
+                        //connect to database
+                        $mysqli = sql_Connect();
+
+                        //delete from link '.html'
+                        $news_link_str = substr($_GET['item'],0,-5);
+
+                        //model - get data for single news
+                        $news_current = news_Get_SingleByName($mysqli, $news_link_str);
+
+                        //if received single news data - include view of single news
+
+                        if (!empty($news_current))
+                        {
+                            include_once __DIR__.'/../views/news_single.php';
+                        }
+                    }
+                }
+
+                break;
+
+            } // case 'article'
+
+
+            /* Route = 'Concurs' */
+            /**********************************************************************************************************/
+            case 'concurs':
+
+            {
+                if (isset($_GET['item']))
+                {
+                    if ($_GET['item'] == 'all')
+                    {
+                        //Get all news for main page
+
+                        require_once SITEROOTDIR.'models/concurs.php';
+                        require_once SITEROOTDIR.'functions/array.php';
+                        require_once SITEROOTDIR.'functions/sql.php';
+
+
+                        //connect to database
+                        $mysqli = sql_Connect();
+
+                        //vars
+                        //*********************************************************************************************/
+
+                        //$page = 1;
+
+
+                        //*********************************************************************************************/
+
+                        //get data from database
+
+                        $concurs = concurs_Get_all_ex_archive($mysqli, NEWS_LIMIT_ALL);
+
+
+                        //makeing array  - save data in array
+
+                        $concurs_Count = count($concurs);
+                        $concurs_Array = object_GetArray ($concurs, $concurs_Count, CONCURS_ONPAGE);
+
+                        //*********************************************************************************************/
+
+
+                        //save vars in session
+
+                        //session_start();
+
+                        $_SESSION['concurs_Page'] = 1;
+                        $_SESSION['concurs_Count'] = $concurs_Count;
+                        $_SESSION['concurs_Array'] = $concurs_Array;
+
+
+                        //views
+                        //*********************************************************************************************/
+
+                        include_once SITEROOTDIR.'views/concurs_all.php';
+
+
+                    }
+
+                    else
+                    {
+                        //Get single concurs data
+
+                        //checking URL, if not valid - redirect to main page
+                        if (!preg_match("/^[-a-z0-9]+\.html$/", $_GET['item']))
+
+                        {
+                            header('location: /');
+                            exit;
+
+                        }
+
+
+                        //else get single concurs data
+
+                        require_once SITEROOTDIR.'models/concurs.php';
+                        require_once SITEROOTDIR.'functions/sql.php';
+
+                        //connect to database
+                        $mysqli = sql_Connect();
+
+                        //delete from link '.html'
+                        $concurs_link_str = substr($_GET['item'],0,-5);
+
+                        //model - get data for single news
+                        $concurs_current = concurs_Get_SingleByName($mysqli, $concurs_link_str);
+
+                        //if received single news data - include view of single news
+
+                        if (!empty($concurs_current))
+                        {
+                            include_once __DIR__.'/../views/concurs_single.php';
+                        }
+                    }
+                }
+
+                break;
+
+            } // case 'article'
 
 
             /* Route = 'Filials' */
@@ -480,6 +679,11 @@ if (isset($_GET['route']))
 
                         case 'cats.html': {
                             include_once SITEROOTDIR.'views/reading/cats.php';
+                            break;
+                        }
+
+                        case 'fantasy.html': {
+                            include_once SITEROOTDIR.'views/reading/fantasy.php';
                             break;
                         }
                     }

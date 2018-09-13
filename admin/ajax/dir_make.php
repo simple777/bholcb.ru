@@ -25,6 +25,13 @@ require_once __DIR__.'/../../functions/file.php';
                     $base_url = SITEURL."media/person/";
                     break;
                 }
+
+            case 'concurs':
+                {
+                    $base = SITEROOTDIR."media/concurs/";
+                    $base_url = SITEURL."media/concurs/";
+                    break;
+                }
         }
 
 

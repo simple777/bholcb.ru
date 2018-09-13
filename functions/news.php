@@ -30,7 +30,7 @@ function news_Filter ($year, $month)
 
         if ($news_Count != 0)
         {
-            $news_Array = news_GetArray ($news, $news_Count, NEWS_ONPAGE);
+            $news_Array = object_GetArray ($news, $news_Count, NEWS_ONPAGE);
             $_SESSION['news_Array'] = $news_Array;
 
             include __DIR__ . '/../views/news_all_inc.php';

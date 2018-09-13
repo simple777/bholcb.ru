@@ -3,7 +3,7 @@
 
 .books-wrapper
 {
-	width: 50%;
+	width: 60%;
 	margin: 0 auto 1.5em;
 	padding: 2em 0;
 }
@@ -65,3 +65,33 @@
 	line-height: 1.5em;
 }
 
+.books-table
+{
+	width: 100%;
+	border: 1px dashed #5c4746;
+}
+
+.books-table th, tr, td
+{
+	border: 1px dashed #5c4746;
+}
+
+.books-table-book-img
+{
+	min-width: 205px;
+	text-align: center;
+	padding: 0.3em;
+}
+
+.books-table-book-info, .books-table-book-age
+{
+	font-size: 1.3em;
+	text-align: justify;
+	line-height: 1.5em;
+	padding: 0 3em;
+}
+
+.books-table-book-age
+{
+
+}

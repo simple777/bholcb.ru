@@ -71,6 +71,22 @@
                             <a href="<?php echo SITEURL;?>reading/recommendation/cats.html" class="content-line-block-link"></a>
                         </div>
 
+                        <div class="content-line-block-2" style="width: 100%">
+                            <div class="content-line-block-content">
+                                <div class="content-line-block-content-in">
+                                    <div class="content-line-block-content-in-text">
+                                        <h2 class="content-line-block-header">Фантастика</h2>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content-line-block-bg">
+                                <img src="<?php echo SITEURL;?>images/afisha/fantasy.jpg">
+                            </div>
+
+                            <a href="<?php echo SITEURL;?>reading/recommendation/fantasy.html" class="content-line-block-link"></a>
+                        </div>
+
                     </div>
 
                 </div>

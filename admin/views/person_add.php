@@ -127,6 +127,7 @@ else
 <!-- Scripts -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="<?php echo SITEURL;?>admin/js/jquery.liTranslit.js"></script>
+<script src="<?php echo SITEURL;?>admin/js/root.js"></script>
 <script src="<?php echo SITEURL;?>admin/js/ui.js"></script>
 <script src="<?php echo SITEURL;?>admin/js/larger.js"></script>
 <script>

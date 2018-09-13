@@ -3,6 +3,37 @@ $(document).ready(function(){
 /* Submit events */
 /**********************************************************************************************************************/
 
+    /* Insert */
+
+    $('#admin-insert-form').submit(function (e) {
+
+        //отменяем стандартное действие при отправке формы
+        e.preventDefault();
+
+        //берем из формы метод передачи данных
+        var m_method=$(this).attr('method');
+
+        //получаем адрес скрипта на сервере, куда нужно отправить форму
+        var m_action=$(this).attr('action');
+
+        //получаем данные, введенные пользователем в формате input1=value1&input2=value2...,
+        //то есть в стандартном формате передачи данных формы
+        var m_data=$(this).serialize();
+
+        $.ajax({
+            type: m_method,
+            url: m_action,
+            data: m_data,
+            success:
+
+                function(res)
+                {
+                    alert(res);
+                }
+        }); //ajax
+
+    }); //submit
+
     /* News insert */
 
     $('#admin-insert-news').submit(function (e) {
@@ -80,6 +111,7 @@ $(document).ready(function(){
         switch (category)
         {
             case 'news':
+            case 'concurs':
                 {
                     var dir_name = $("#title-eng").val()+'/';
                     var dir_name_ru = $("#title").val();
@@ -99,7 +131,7 @@ $(document).ready(function(){
         $.ajax({
             type: "POST",
             async: true,
-            url: "ajax/dir_make.php",
+            url: constants.DIR_MAKE,
             data: "dir_name="+dir_name+"&dir_name_ru="+dir_name_ru+'&category='+category,
             success: function(html) {
 
@@ -152,7 +184,7 @@ $(document).ready(function(){
                     $.ajax({
                         type: "POST",
                         async: true,
-                        url: "ajax/img_prepare.php",
+                        url: constants.IMG_PREPARE,
                         data: "dir_path="+dir_path+"&dir_url="+dir_url,
 
                         success: function(res) {

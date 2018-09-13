@@ -190,6 +190,47 @@ $(document).ready(function(){
 
     /******************************************************************************************************************/
 
+    function concurs_Showmore() {
+
+        //hide show-more button
+        $('.concurs-show-more').remove();
+
+        //adding preload image
+        $('.news').append("<div id='news-preloader' class='clearfix'><img src='images/gif/preloader-circle.gif' width='64px' height='64px'></div>");
+
+
+        $.ajax({
+            type: 'POST',
+            async: true,
+            url: 'ajax/concurs_showmore.php',
+            success: function(html) {
+
+                if (html)
+                {
+
+                    //remove preloader from container
+                    $('#news-preloader').fadeOut(300, function(){ $(this).remove() });
+
+                    //insert html to news container
+                    $('.news').append(html);
+
+
+                    //scrolling to latest news
+                    $('html, body').animate({
+                        scrollTop: '+=300px'
+                    }, 500);
+
+
+                    //add showmore button click event
+                    $('.concurs-show-more-but').on('click', concurs_Showmore);
+                }
+            } //success
+        }); //ajax
+
+    }
+
+    /******************************************************************************************************************/
+
     /* Main code */
 
 
@@ -199,16 +240,22 @@ $(document).ready(function(){
 
     //showmore but click
     $('.news-show-more-but').on('click', news_Showmore);
+    $('.concurs-show-more-but').on('click', concurs_Showmore);
 
 
-    //init: select date on news filter
-    var date_Current = getDate();
+        //for news
+        if ($('.news-filter-wrapper').length)
+        {
+            //init: select date on news filter
+            var date_Current = getDate();
 
-    if (!dateSelect(date_Current[0], date_Current[1]))
+            if (!dateSelect(date_Current[0], date_Current[1]))
 
-    {
-        alert('Установите верную дату на своем компьютере!');
-    }
+            {
+                alert('Установите верную дату на своем компьютере!');
+            }
+        }
+
 
 
 }); //jQuery

@@ -16,17 +16,19 @@ $mysqli = sql_Connect();
         die("Connection failed: " . $conn->connect_error);
     }
 
-   $res = person_Insert($mysqli,
-       $_POST['f_name'],
-       $_POST['s_name'],
-       $_POST['t_name'],
-       $_POST['text'],
-       $_POST['author'],
-       $_POST['city'],
-       $_POST['imgprev'],
-       $_POST['name_eng'],
-       $_POST['tags']);
+    else
+        {
+            $res = person_Insert($mysqli,
+                $_POST['f_name'],
+                $_POST['s_name'],
+                $_POST['t_name'],
+                $_POST['text'],
+                $_POST['author'],
+                $_POST['city'],
+                $_POST['imgprev'],
+                $_POST['name_eng'],
+                $_POST['tags']);
 
-   if ($res) { echo 'Success!'; } else { echo 'Error inserting person!'; }
-
+            if ($res) { echo 'Success!'; } else { echo 'Error inserting person!'; }
+        }
 ?>

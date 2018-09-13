@@ -52,7 +52,7 @@ else
 
 <body>
 
-<div id="category" class="hidden">news</div>
+<div id="category" class="hidden">concurs</div>
 
 <div class="admin-page-wrapper">
 
@@ -72,34 +72,25 @@ else
 
             <div class="admin-content">
 
-                <form action="<?php echo SITEURL;?>admin/ajax/news_insert.php" method="POST" id="admin-insert-news" name="admin-insert-news" class="admin-form">
+                <form action="<?php echo SITEURL;?>admin/ajax/concurs_insert.php" method="POST" id="admin-insert-form" name="admin-insert-form" class="admin-form">
 
-                    <legend>Добавить новость</legend>
+                    <legend>Добавить конкурс</legend>
 
                     <input type="text" id="title" name="title" placeholder="Заголовок" class="admin-input" value="<?php echo $dir_name; ?>" required>
                     <input type="text" id="title-eng" name="title-eng" class="admin-input">
                     <input type="text" id="path" name="path" class="admin-input" disabled value="<?php echo $dir_path; ?>">
                     <input type="text" id="url" name="url" class="admin-input" disabled value="<?php echo $dir_url; ?>">
-                    <input type="date" name="publish_date" class="forclear" required>
+                    <input type="text" id="term_link" name="term_link" class="admin-input forclear"  placeholder="Ссылка на Положение" required>
+                    <input type="date" name="concurs_date" class="forclear" required>
+                    <input type="date" name="concurs_off_date" class="forclear" required>
 
-                    <input type="text" id="imgprev-medium" name="imgprev-medium" placeholder="Превью 400x400" class="admin-input forclear" required>
-                    <input type="text" id="imgprev-small" name="imgprev-small" placeholder="Превью 170x170" class="admin-input forclear" required>
+                    <input type="text" id="imgprev-medium" name="imgprev-medium" placeholder="Превью 1024x768 (main)" class="admin-input forclear" required>
+                    <input type="text" id="imgprev-small" name="imgprev-small" placeholder="Превью 400x400 (medium)" class="admin-input forclear" required>
 
                     <textarea type="text" id="description" name="description" placeholder="Краткое описание" class="admin-input description forclear" required></textarea>
                     <textarea type="text" id="text" name="text" placeholder="Текст" class="admin-input forclear" required></textarea>
 
                     <input type="text" id="tags" name="tags" placeholder="Теги" class="admin-input forclear">
-
-
-                    <select id="author" name="author">
-                        <?php include_once  SITEROOTDIR.'admin/views/main/authors.php'; ?>
-                    </select>
-
-                    <select id="category" name="category">
-                        <option>Новости</option>
-                    </select>
-
-                    <input type="text" id="img-count" name="img-count" placeholder="Кол-во картинок" class="admin-input forclear">
 
                     <br>
 
@@ -131,8 +122,8 @@ else
 <script src="<?php echo SITEURL;?>admin/js/larger.js"></script>
 <script>
     $(function(){
-        $('#admin-insert-news #title').liTranslit({
-            elAlias: $('#admin-insert-news #title-eng')
+        $('#admin-insert-form #title').liTranslit({
+            elAlias: $('#admin-insert-form #title-eng')
         });
     });
 </script>

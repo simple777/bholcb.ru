@@ -1,0 +1,348 @@
+/* Concurs */
+
+/**********************************************************************************************************************/
+
+.concurs-wrapper
+{
+	width: 50%;
+	margin: 1.5em auto;
+}
+
+.concurs-wrapper::before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: .1;
+	z-index: -1;
+
+	background: url(../images/pages/news-bg.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+}
+
+.concurs
+{
+	width: 100%;
+	position: relative; /* for preloader, which have absolute position */
+	font-size: 1.3em;
+}
+
+.concurs-row
+{
+	width: 100%;
+	min-height: 235px;
+	margin-bottom: 3em;
+}
+
+.concurs-item-wrapper
+{
+	position: relative;
+	width: 100%;
+}
+
+.concurs-item-header
+{
+	display: table;
+
+	text-transform: uppercase;
+	color: #000;
+
+	position: relative;
+	width: 100%;
+	min-height: 30px;
+
+	margin-bottom: 3%;
+	padding: 0;
+
+	border-top: 1px dashed #cac5bf;
+	border-bottom: 1px dashed #cac5bf;
+}
+
+.concurs-item-content-img
+{
+	margin-bottom: 0 !important;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.concurs-item-date
+{
+	line-height: 30px;
+	text-align: center;
+}
+
+.concurs-item-terms a, .concurs-item-link a
+{
+	display: block;
+	padding: .5em;
+	margin-top: 1em;
+	color: #000;
+	background: #feb52c;
+	text-align: center;
+}
+
+.concurs-item-text
+{
+	color: #222;
+	line-height: 150%;
+	font-size: 1.3em;
+	margin-bottom: 0 !important;
+}
+
+
+/* Concurs Single */
+/**********************************************************************************************************************/
+
+.concurs-single-content-wrapper
+{
+	width: 100%;
+	margin: 1.5em auto;
+}
+
+.concurs-single-wrapper::before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: .2;
+	z-index: -1;
+
+	background: url(../images/pages/news-bg.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+}
+
+.concurs-single
+{
+	position: relative;
+	z-index: 1;
+	width: 50%;
+	margin: 0 auto;
+	padding-top: 3em;
+
+	background: #fff;
+}
+
+
+/* Images*/
+
+.concurs-single-content-wrapper-portrait, .concurs-single-content-wrapper-landscape
+{
+	position: relative;
+	width: 800px;
+	max-width: 100%;
+	margin: 3em auto;
+}
+
+.concurs-single-content-wrapper-portrait
+{
+	width: 600px;
+}
+
+.concurs-single-content-one-in-row
+{
+	max-width: 100% !important;
+	max-height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+	object-position: center;
+
+}
+
+.concurs-item-content-img > img
+{
+	min-width: 100%;
+}
+
+/*Header*/
+
+.concurs-single-header
+{
+	position: relative;
+	width: 100%;
+	min-height: 90px;
+	/*background: #f6f3ea;
+	/*background: #f0f5f2;*/
+	background: #f6f3ea;
+
+	margin-bottom: 6%;
+	padding: 0.5em 0;
+	border-top: 1px dashed #cac5bf;
+	border-bottom: 1px dashed #cac5bf;
+
+	display: table;
+}
+
+.concurs-single-dates
+{
+	line-height: 30px;
+	background: #f6f3ea;
+}
+
+.concurs-single-date
+{
+	width: 25%;
+	min-height: 90px;
+	color: #000;
+	font-size: 2em;
+	text-align: center;
+
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.concurs-single-date-month
+{
+	font-size: .6em;
+	line-height: 45px;
+	letter-spacing: 7px;
+	margin: -9px 0 5px 0;
+}
+
+.concurs-single-date-number
+{
+	font-size: .8em;
+	line-height: 25px;
+	letter-spacing: 7px;
+	margin-top: -8px;
+}
+
+.concurs-single-title
+{
+	width: 75%;
+	min-height: 90px !important;
+
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.concurs-single-title > h2
+{
+	padding-right: 30px;
+	padding-left: 1em;
+	display: table-cell;
+	vertical-align: middle;
+	border-left: 1px dashed #989384;
+	/*color: #897e70;*/
+	color: #000;
+}
+
+
+/* Content */
+
+.concurs-single-title
+{
+	font-size: 1.4em;
+}
+
+.concurs-single-content
+{
+	padding: 0em 5em;
+}
+
+.concurs-single-content p, .concurs-single-content div
+{
+	font-size: 1.3em;
+	text-align: justify;
+	line-height: 1.5em;
+}
+
+.concurs-single-footer
+{
+	text-align: right;
+	padding: 2em;
+}
+
+
+.concurs-item-empty
+{
+	color: #333;
+	text-align: center;
+}
+
+/* Media queries */
+/**********************************************************************************************************************/
+
+@media screen and (max-width: 1583px)
+{
+	.news-item-images-count
+	{
+		top: 83%;
+		left: 79%;
+	}
+}
+
+	@media screen and (max-width: 1192px)
+{
+
+	/* Single news */
+
+	.news-item-text
+	{
+		font-size: 1.1em;
+	}
+
+	.news-item-images-count
+	{
+		top: 85%;
+		left: 75%;
+	}
+
+}
+
+
+/* Large Devices, Wide Screens */
+@media screen and (max-width: 1280px)
+{
+	/* Single news */
+
+	.news-item-text
+	{
+		font-size: 1.1em;
+	}
+
+	.news-item-images-count
+	{
+		top: 83%;
+		left: 79%;
+	}
+
+	.news-item-images-count img
+	{
+		width: 15px;
+		height: 15px;
+
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+}
+
+
+/*Preloading images*/
+/**********************************************************************************************************************/
+
+.img_preload
+{
+
+}

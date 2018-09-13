@@ -96,7 +96,7 @@ else
                     </select>
 
                     <select id="category" name="category">
-                        <option>Новости</option>
+                        <option>Статья</option>
                     </select>
 
                     <input type="text" id="img-count" name="img-count" placeholder="Кол-во картинок" class="admin-input forclear">
