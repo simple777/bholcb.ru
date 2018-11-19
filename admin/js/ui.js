@@ -107,7 +107,6 @@ $(document).ready(function(){
 
         var category = $('#category').text();
 
-
         switch (category)
         {
             case 'news':
@@ -119,6 +118,7 @@ $(document).ready(function(){
                 }
 
             case 'person':
+            case 'vote':
                 {
                     var dir_name = $("#name_eng").val()+'/';
                     var dir_name_ru = $("#name").val();
@@ -167,18 +167,89 @@ $(document).ready(function(){
         var dir_path = $("#path").val();
         var dir_url = $("#url").val();
 
+        var category = $('#category').text();
 
-        if ( dir_path != '' )
+        switch (category)
+        {
+            case 'vote':
             {
+                if ( dir_path != '' )
+                {
 
-                //1. Show preloader
+                    //1. Show preloader
 
                     $('#images-preview').text('');
 
                     $('#preloader_h').show();
 
-                //2. Ajax query
+                    //2. Ajax query
 
+
+
+                    $.ajax({
+                        type: "POST",
+                        async: true,
+                        url: constants.IMG_PREPARE_VOTE,
+                        data: "dir_path="+dir_path+"&dir_url="+dir_url,
+
+                        success: function(res) {
+
+                            alert(res);
+
+                            $('#preloader_h').hide();
+
+                            var img_alt = $('#title').val();
+
+                            if (res)
+                            {
+
+                                alert(res);
+
+                            }
+
+                        },//success
+
+                        error: function (jqXHR, exception) {
+                            var msg = '';
+                            if (jqXHR.status === 0) {
+                                msg = 'Not connect.\n Verify Network.';
+                            } else if (jqXHR.status == 404) {
+                                msg = 'Requested page not found. [404]';
+                            } else if (jqXHR.status == 500) {
+                                msg = 'Internal Server Error [500].';
+                            } else if (exception === 'parsererror') {
+                                msg = 'Requested JSON parse failed.';
+                            } else if (exception === 'timeout') {
+                                msg = 'Time out error.';
+                            } else if (exception === 'abort') {
+                                msg = 'Ajax request aborted.';
+                            } else {
+                                msg = 'Uncaught Error.\n' + jqXHR.responseText;
+                            }
+                            alert(msg);
+                        }
+
+                    });//ajax
+                }
+                break;
+            }
+
+            default:
+            {
+
+                if ( dir_path != '' )
+                {
+
+                    //1. Show preloader
+
+                    $('#images-preview').text('');
+
+                    $('#preloader_h').show();
+
+                    //2. Ajax query
+
+
+                    dir_url = dir_url.replace('localhost/', ''); //remove if need to see preview
 
 
                     $.ajax({
@@ -217,21 +288,21 @@ $(document).ready(function(){
                                 {
 
                                     if (value.indexOf('gallery') !== -1)
-                                        {
-                                            gallery_array[k] =  value;
-                                            k++;
-                                        }
-                                        else if (value.indexOf('main') !== -1 || value.indexOf('prev') !== -1)
-                                            {
-                                                main_array[j] = value;
-                                                j++;
-                                            }
+                                    {
+                                        gallery_array[k] =  value;
+                                        k++;
+                                    }
+                                    else if (value.indexOf('main') !== -1 || value.indexOf('prev') !== -1)
+                                    {
+                                        main_array[j] = value;
+                                        j++;
+                                    }
 
-                                            else if (value.indexOf('thumb') !== -1)
-                                                {
-                                                    thumb_array[t] = value;
-                                                    t++;
-                                                }
+                                    else if (value.indexOf('thumb') !== -1)
+                                    {
+                                        thumb_array[t] = value;
+                                        t++;
+                                    }
 
                                 });
 
@@ -250,7 +321,7 @@ $(document).ready(function(){
                                 {
                                     var gallery_html =
                                         "\t \t <a href='"+gallery_array[i]+"'>\n" +
-                                            "\t \t \t <img src='"+thumb_array[i]+"' title='"+img_alt+" "+(i+1)+"' alt='"+img_alt+"'> \n" +
+                                        "\t \t \t <img src='"+thumb_array[i]+"' title='"+img_alt+" "+(i+1)+"' alt='"+img_alt+"'> \n" +
                                         "\t \t </a>\n";
 
                                     $('#gallery-html').val($('#gallery-html').val() + gallery_html);
@@ -268,8 +339,8 @@ $(document).ready(function(){
                                 $.each(main_array, function(index, value)
                                 {
                                     var image_str = "<div class='images-preview-wrapper clearfix'>" +
-                                            "<img src='"+value+"' width='50px' class='minimized'>" +
-                                            "<div class='images-preview-text'>"+value+"</div>" +
+                                        "<img src='"+value+"' width='50px' class='minimized'>" +
+                                        "<div class='images-preview-text'>"+value+"</div>" +
                                         "</div>";
 
                                     $('#images-preview').append(image_str);
@@ -300,7 +371,11 @@ $(document).ready(function(){
                         }
 
                     });//ajax
-            }
+                }
+                break;
+            }//case
+        }//switch
+
 
     });
 

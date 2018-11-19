@@ -707,6 +707,7 @@ nav a
 	height: 100%;
 	padding: 0 2%;
 }
+
 .content-line-block-content-in-text
 {
 	position: relative;
@@ -718,6 +719,24 @@ nav a
 	vertical-align: middle;
 	text-align: center;
 	/* padding: 20px; */
+}
+
+.content-line-block-content-in-text-new
+{
+	color: red;
+	background: #feb52c;
+	position: absolute;
+	font-weight: bold;
+	left: 1.5%;
+	top: 2.5%;
+	padding: .5em 1.5em;
+	z-index: 2;
+}
+
+.content-line-block-content-in-text-new:hover
+{
+	background: red;
+	color: #feb52c;
 }
 
 .content-line-block-header

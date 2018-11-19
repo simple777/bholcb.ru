@@ -61,7 +61,7 @@
             </div>
 
             <div class="news-item-content-data">
-                <div class="news-item-hover-block"><a href="<?php echo 'news/'.$item['link'].'.html'; ?>" class="news-item-hover-link"><div class="news-item-hover-link-block"></div></a></div>
+                <div class="news-item-hover-block"><a href="<?php echo 'news/'.$item['link'].'.html'; ?>" class="news-item-hover-link" target="_blank"><div class="news-item-hover-link-block"></div></a></div>
                 <p class="news-item-text"><?php echo $item['description']; ?></p>
                 <p class="news-item-author"><?php echo $item['author']; ?></p>
 

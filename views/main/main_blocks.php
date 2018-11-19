@@ -15,6 +15,7 @@
         </div>
 
         <a href="<?php echo SITEURL;?>concurs.html" class="content-line-block-link"></a>
+        <!--<a href="<?php //echo SITEURL;?>concurs/2018-nnm/vote.html" class="content-line-block-content-in-text-new">Открыто голосование! (перейти)</a>-->
 
     </div>
 
@@ -33,6 +34,7 @@
         </div>
 
         <a href="<?php echo SITEURL; ?>projects.html" class="content-line-block-link"></a>
+        <a href="<?php echo SITEURL;?>projects/virtual-tour/100great.html" class="content-line-block-content-in-text-new">Новинка: "Виртуальные выставки"</a>
 
     </div>
 
@@ -109,7 +111,8 @@
             <img src="images/blocks/6.jpg">
         </div>
 
-        <a href="<?php echo SITEURL;?>books-of-month.html" class="content-line-block-link"></a>
+        <!-- <a href="<?php //echo SITEURL;?>books-of-month.html" class="content-line-block-link"></a> -->
+        <a href="https://yadi.sk/i/4qWBRFrwa3UfMg" class="content-line-block-link" target="_blank"></a>
 
     </div>
 

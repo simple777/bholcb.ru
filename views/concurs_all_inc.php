@@ -27,7 +27,8 @@
         </div>
 
         <div class="concurs-item-desciption"><?php echo $item['description']; ?></div>
-        <div class="concurs-item-link"><a href="concurs/<?php echo $item['link'].'.html'; ?>">Подробнее</a></div>
+        <div class="concurs-item-link"><a href="<?php echo SITEURL;?>concurs/<?php echo $item['link'].'.html'; ?>">Подробнее</a></div>
+        <div class="concurs-item-link"><a href="<?php echo SITEURL;?>concurs/2018-nnm/vote.html" style="background: #50a52d;">Результаты творческого конкурса</a></div>
 
     </article>
 

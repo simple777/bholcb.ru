@@ -32,6 +32,13 @@ require_once __DIR__.'/../../functions/file.php';
                     $base_url = SITEURL."media/concurs/";
                     break;
                 }
+
+            case 'vote':
+            {
+                $base = SITEROOTDIR."media/vote/";
+                $base_url = SITEURL."media/vote/";
+                break;
+            }
         }
 
 
@@ -41,7 +48,7 @@ require_once __DIR__.'/../../functions/file.php';
         if (!is_dir($base.$_POST['dir_name']))
         {
 
-            //create folders for news
+            //create folders
 
             $dir = dir_make($base, $_POST['dir_name']);
             $url = $base_url.$_POST['dir_name'];

@@ -38,6 +38,22 @@
 
                         <div class="content-line-wrapper-2">
 
+                                <div class="content-line-block-2" style="width: 100%">
+                                    <div class="content-line-block-content">
+                                        <div class="content-line-block-content-in">
+                                            <div class="content-line-block-content-in-text">
+                                                <h2 class="content-line-block-header">Виртуальные выставки</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="content-line-block-bg">
+                                        <img src="<?php echo SITEURL;?>images/pages/projects/2018/2018-virtecs.jpg">
+                                    </div>
+
+                                    <a href="<?php echo SITEURL;?>projects/virtual-tour.html" class="content-line-block-link"></a>
+                                </div>
+
                                 <div class="content-line-block-2">
                                     <div class="content-line-block-content">
                                         <div class="content-line-block-content-in">

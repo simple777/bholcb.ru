@@ -1,0 +1,175 @@
+/* Vote */
+/**********************************************************************************************************************/
+
+.vote-wrapper
+{
+    width: 100%;
+    margin: 1.5em auto;
+}
+
+.vote-wrapper::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+    z-index: -1;
+
+    background: url(../images/pages/success-bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.vote
+{
+    padding: 50px 0;
+}
+
+.vote h2
+{
+    text-transform: uppercase;
+    margin: 1em auto;
+    text-align: center;
+    margin-bottom: 1em;
+
+    background: #feb52c;
+    padding: 10px;
+}
+
+.vote p
+{
+    font-size: 1.3em;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+.vote img
+{
+    margin: 3%;
+
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 1);
+    -moz-box-shadow:    2px 2px 5px 0px rgba(50, 50, 50, 1);
+    box-shadow:         2px 2px 5px 0px rgba(50, 50, 50, 1);
+}
+
+.vote img:hover
+{
+    -webkit-box-shadow: 4px 4px 7px 0px rgba(50, 50, 50, 1);
+    -moz-box-shadow:    4px 4px 7px 0px rgba(50, 50, 50, 1);
+    box-shadow:         4px 4px 7px 0px rgba(50, 50, 50, 1);
+}
+
+.vote-image-wrapper
+{
+    text-align: center;
+    display: inline-block;
+    margin: 3%;
+}
+
+.vote-image-wrapper span, .about-success-personal-row-image-wrapper span
+{
+    background: rgba(255,255,255,.3);
+    padding: 2%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.vote-btn
+{
+    background: #feb52c;
+    margin: 1em auto 0 auto;
+    width: 157px;
+    padding: 2%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+.vote-btn:hover
+{
+    background: #ffa600;
+    cursor: pointer;
+}
+
+.vote-btn:active
+{
+    background: #a5988d;
+}
+
+.vote-count
+{
+    margin-top: .5em;
+    color: #585048;
+}
+
+.modal-windows
+{
+    background: #4bc565;
+    width: 100%;
+    height: 410px;
+    position: fixed;
+    z-index: 9999999;
+    display: none;
+    font-size: 5em;
+    text-align: center;
+    top: -410px;
+}
+
+.modal-windows p
+{
+    margin-top: 9%;
+}
+
+
+    /*Preloading images*/
+/**********************************************************************************************************************/
+
+.img_preload
+{
+
+}
+
+
+/* Media queries */
+/**********************************************************************************************************************/
+
+/* For fonts*/
+@media screen and (max-width: 1583px)
+{
+
+}
+
+@media screen and (max-width: 1499px)
+{
+
+}
+
+/* Large Devices, Wide Screens */
+@media screen and (max-width: 1280px)
+{
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+
+{
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+
+{
+
+}

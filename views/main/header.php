@@ -65,11 +65,28 @@
                         </div>
                     </div>
 
+                    -->
+
+                    <!--
+
                     <div class="slide">
-                        <div class="slide-image-wrapper "><a href="<?php echo SITEURL;?>afisha/need-help.html" class="slide-href" target="_blank"><img src="<?php echo SITEURL;?>media/afisha/remont.jpg"></a></div>
+                        <div class="slide-image-wrapper "><a href="<?php echo SITEURL;?>afisha/remont-2018.html" class="slide-href" target="_blank"><img src="<?php echo SITEURL;?>media/afisha/remont.jpg"></a></div>
                         <div class="slide-text-wrapper">
-                            <h2 class="slide-header">Нужна ваша помощь</h2>
-                            <p class="slide-description">просим оказать Вас помощь в сборе денежных средств</p>
+                            <h2 class="slide-header">Ремонт второго этажа</h2>
+                            <p class="slide-description">в связи с ремонтом второго этажа некоторые отделы переехали в другие помещения. Подробнее по ссылке</p>
+                            <div class="slides-navigation"></div>
+                        </div>
+                    </div>
+
+                    -->
+
+                    <!--
+
+                    <div class="slide">
+                        <div class="slide-image-wrapper "><a href="<?php echo SITEURL;?>afisha/marihin-reading-3.html" class="slide-href" target="_blank"><img src="<?php echo SITEURL;?>media/afisha/marihin-reading-3.jpg"></a></div>
+                        <div class="slide-text-wrapper">
+                            <h2 class="slide-header">Марихинские чтения</h2>
+                            <p class="slide-description">16 ноября 10:00 в лекционном зале состоятся третьи Марихинские чтения</p>
                             <div class="slides-navigation"></div>
                         </div>
                     </div>

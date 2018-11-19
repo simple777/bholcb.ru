@@ -267,6 +267,13 @@ if (isset($_GET['route']))
 
                     }
 
+                    elseif ($_GET['item'] == '2018-nnm')
+
+                    {
+                        include_once SITEROOTDIR.'views/concurs/2018-nnm/vote.php';
+                        break;
+                    }
+
                     else
                     {
                         //Get single concurs data
@@ -648,6 +655,16 @@ if (isset($_GET['route']))
                             include_once SITEROOTDIR.'views/afisha/12-june.php';
                             break;
                         }
+
+                        case 'remont-2018.html': {
+                            include_once SITEROOTDIR.'views/afisha/remont-2018.php';
+                            break;
+                        }
+
+                        case 'marihin-reading-3.html': {
+                            include_once SITEROOTDIR.'views/afisha/marihin-reading-3.php';
+                            break;
+                        }
                     }
 
                 }
@@ -704,10 +721,39 @@ if (isset($_GET['route']))
             /**********************************************************************************************************/
 
             case 'projects':
+
             {
-                include_once __DIR__ . '/../views/projects.php';
+                //choose project
+
+                if (isset($_GET['item']))
+                {
+                    switch ($_GET['item'])
+                    {
+
+                        case 'virtual-tour.html':
+                        {
+                            include_once SITEROOTDIR.'views/projects/virtual-tour/virtual-tour.php';
+                            break;
+                        }
+
+                        case '100great.html':
+                        {
+                            include_once SITEROOTDIR.'views/projects/virtual-tour/100great.php';
+                            break;
+                        }
+
+                    }
+                }
+
+                else
+                {
+                    include_once SITEROOTDIR.'views/projects.php';
+                    break;
+                }
+
                 break;
             }
+
 
             /* Route = 'Print' */
             /**********************************************************************************************************/
