@@ -112,7 +112,7 @@
         </div>
 
         <!-- <a href="<?php //echo SITEURL;?>books-of-month.html" class="content-line-block-link"></a> -->
-        <a href="https://yadi.sk/i/4qWBRFrwa3UfMg" class="content-line-block-link" target="_blank"></a>
+        <a href="https://yadi.sk/i/Ub9Qo7FJy94cvA" class="content-line-block-link" target="_blank"></a>
 
     </div>
 

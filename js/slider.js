@@ -145,9 +145,9 @@ $(document).ready(function(){
 
 
                     var $pagers = $pagerList.find('.slides-fader-controls-page');
-                    $slides.eq(0).css('opacity', 1);
-                    $pagers.eq(0).addClass('active');
-                    activeSlide = 0;
+                    $slides.eq(0).css('opacity', 1); // set 1 if more then 2
+                    $pagers.eq(0).addClass('active'); // set 1 if more then 2
+                    activeSlide = 0; // set 1 if more then 2
 
 
                     if ( (localStorage.getItem('good-vision') != null) && (localStorage.getItem('good-vision') == '0') )

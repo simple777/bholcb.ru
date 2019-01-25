@@ -80,18 +80,6 @@
 
                     -->
 
-                    <!--
-
-                    <div class="slide">
-                        <div class="slide-image-wrapper "><a href="<?php echo SITEURL;?>afisha/marihin-reading-3.html" class="slide-href" target="_blank"><img src="<?php echo SITEURL;?>media/afisha/marihin-reading-3.jpg"></a></div>
-                        <div class="slide-text-wrapper">
-                            <h2 class="slide-header">Марихинские чтения</h2>
-                            <p class="slide-description">16 ноября 10:00 в лекционном зале состоятся третьи Марихинские чтения</p>
-                            <div class="slides-navigation"></div>
-                        </div>
-                    </div>
-
-                    -->
 
                     <div class="slide">
                         <div class="slide-image-wrapper "><a href="<?php echo SITEURL;?>afisha/recommendations-for-children.html" class="slide-href" target="_blank"><img src="<?php echo SITEURL;?>media/afisha/recommendations-for-children.jpg"></a></div>
@@ -101,6 +89,28 @@
                             <div class="slides-navigation"></div>
                         </div>
                     </div>
+
+<!--
+
+                    <div class="slide">
+                        <div class="slide-image-wrapper "><a href="<?php //echo SITEURL;?>afisha/new-year-2019.html" class="slide-href" target="_blank"><img src="<?php //echo SITEURL;?>media/afisha/new-year-2019-5.jpg"></a></div>
+                        <div class="slide-text-wrapper">
+                            <h2 class="slide-header">Новогодние каникулы</h2>
+                            <p class="slide-description">План мероприятий белохолуницкой центральной библиотеки в новогодние каникулы с 17.12.18 по 08.01.19</p>
+                            <div class="slides-navigation"></div>
+                        </div>
+                    </div>
+-->
+                  <!-- 
+                    <div class="slide">
+                        <div class="slide-image-wrapper "><a href="<?php //echo SITEURL;?>afisha/new-year-2019-time.html" class="slide-href" target="_blank"><img src="<?php //echo SITEURL;?>media/afisha/time.jpg"></a></div>
+                        <div class="slide-text-wrapper">
+                            <h2 class="slide-header">Режим работы в праздники</h2>
+                            <p class="slide-description">29 декабря с 8:00 до 16:00 | 30 декабря, 3,4,6,8 января с 10:00 до 16:00 | 31 декабря, 1,2,5,7 января - праздничные и выходные дни</p>
+                            <div class="slides-navigation"></div>
+                        </div>
+                    </div>
+				-->
 
                     <div class="slides-fader-controls">
                         <div class="slides-fader-controls-page prev" data-target="prev">&lsaquo;</div>

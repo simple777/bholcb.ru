@@ -143,6 +143,34 @@
     border: 5px solid #e0825b;
 }
 
+/*Text like news*/
+/**********************************************************************************************************************/
+
+.afisha-single
+{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 3em;
+
+    background: #fff;
+}
+
+
+.afisha-single-content > p
+{
+    font-size: 1.3em;
+    text-align: justify;
+    line-height: 1.5em;
+    text-transform: none;
+    color: black;
+}
+
+.afisha-single-content
+{
+    padding: 0em 5em;
+}
 
 /*Preloading images*/
 /**********************************************************************************************************************/

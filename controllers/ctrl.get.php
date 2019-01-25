@@ -665,6 +665,21 @@ if (isset($_GET['route']))
                             include_once SITEROOTDIR.'views/afisha/marihin-reading-3.php';
                             break;
                         }
+
+                        case 'ya-volonter.html': {
+                            include_once SITEROOTDIR.'views/afisha/ya-volonter.php';
+                            break;
+                        }
+
+                        case 'new-year-2019.html': {
+                        include_once SITEROOTDIR.'views/afisha/new-year-2019.php';
+                        break;
+                        }
+
+                        case 'new-year-2019-time.html': {
+                            include_once SITEROOTDIR.'views/afisha/new-year-2019-time.php';
+                            break;
+                        }
                     }
 
                 }
@@ -701,6 +716,11 @@ if (isset($_GET['route']))
 
                         case 'fantasy.html': {
                             include_once SITEROOTDIR.'views/reading/fantasy.php';
+                            break;
+                        }
+
+                        case 'christmas-story-2019.html': {
+                            include_once SITEROOTDIR.'views/reading/christmas-story-2019.php';
                             break;
                         }
                     }
